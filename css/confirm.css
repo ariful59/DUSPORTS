@@ -1,0 +1,11 @@
+.fullFormcon{
+ width:70%;
+ margin:auto;
+max-width:750px;
+min-height:440px;
+ position:relative;
+ float:bottom
+}
+.image_pos_con{
+	float:center;
+}
