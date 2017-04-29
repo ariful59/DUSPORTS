@@ -7,7 +7,7 @@
     $Password=($_POST["password"]);
 
 	$hash = md5( rand(0,1000));
-    $conn = new mysqli('localhost', 'root', '', 'WebProject');
+    $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
     if($conn->connect_errno){
         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }
@@ -30,7 +30,7 @@
 		------------------------
 		 
 		Please click this link to activate your account:
-		http://localhost/dusports/verify.php?email='.$Email.'&hash='.$hash.'
+		http://csedu.cf/dusports/dusports/verify.php?email='.$Email.'&hash='.$hash.'
 		
 		Thanks,
 		DUSPORTS
