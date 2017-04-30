@@ -4,103 +4,72 @@
     $FirstName=$_POST["FirstName"];
 	$LastName=$_POST["LastName"];
 	$Email=$_POST["Email"];
-    $Password=($_POST["password"]);
+    $pass=$_POST["password"];
 
-	$hash = md5( rand(0,1000));
+	/*$salt = strtr(base64_encode(mcrypt_create_iv(16, MCRYPT_DEV_URANDOM)), '+', '.');
+	$salt = sprintf("$2a$%02d$", $cost) . $salt;
+    $Password = crypt($pass, $salt);
+	echo $Password;*/
+	$cost = 10;
+	$salt = strtr(base64_encode(mcrypt_create_iv(16, MCRYPT_DEV_URANDOM)), '+', '.');
+	$salt = sprintf("$2a$%02d$", $cost) . $salt;
+	$hash = crypt($pass, $salt);
+	$hash1 = md5( rand(1000,10000));
     $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+    //$conn = new mysqli('localhost', 'root', '', 'WebProject');
+	
     if($conn->connect_errno){
         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }
 	$sql="SELECT * FROM users where email='$Email'";
 	$result= $conn->query($sql);
 	$count = mysqli_num_rows($result);
-	if($count <1){
-		
-		$conn->query("INSERT INTO users(username,email,password, hash) VALUES('".$FirstName."','".$Email."','".$Password."','".$hash."')");
-		sendVerificationBySwift($FirstName,$Password,$hash);
-		
-		/*$to=$Email;
-		$subject='Signup | Verification'; // Give the email a subject 
-		$message = '
-		Hi,
-		Thanks for signing up!
-		
-		Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
-		 
-		------------------------
-		Username: '.$FirstName.'
-		Password: '.$Password.'
-		------------------------
-		 
-		Please click this link to activate your account:
-		http://csedu.cf/dusports/dusports/verify.php?email='.$Email.'&hash='.$hash.'
-		
-		Thanks,
-		DUSPORTS
-		dusports17@gmail.com
-		';                   
-		$headers = 'From:arifulamindu@gmail.com' . "\r\n"; // Set from headers
-		$mail_sent=mail($to, $subject, $message, $headers); // Send our email
-		//echo $mail_sent ? "Mail Sent" : "Mail Failed";
-		if($mail_sent)
-		{
-			echo "<script type='text/javascript'>alert('please verify it by clicking the activation link that has been send to your email.');</script>";
-			//include("signLog.php");
-			//header('location:signLog.php');
+		if($count <1){
+			
+			$conn->query("INSERT INTO users(username,email,password, hash) VALUES('".$FirstName."','".$Email."','".$hash."','".$hash1."')");
+			sendVerificationBySwift($Email,$FirstName,$hash1);
 			echo "<script>
-				alert('please verify it by clicking the activation link that has been send to your email.');
-				window.location.href='signLog.php';
-				</script>";
-		}else{
-			//echo "<script type='text/javascript'>alert('Mail Failed!!');</script>";
-			//include("signLog.php");
-			//header('location:signLog.php');
-			echo "<script>
-				alert('Mail Failed!!');
-				window.location.href='signLog.php';
+				alert('Please Check Your mail for confirmation message');
+				window.location.href='signLog';
 				</script>";
 		}
-		*/
-	}
-	else{
-		echo "<script>
-			alert('You already registered.');
-			window.location.href='signLog.php';
-			</script>";
-	}
+		else{
+			echo "<script>
+				alert('You already registered.');
+				window.location.href='signLog';
+				</script>";
+		}
 	}else{
-		header('location:signLog.php');
-	}
-		
-		
-		
+		header('location:signLog');
+	}	
 	function sendVerificationBySwift($email,$name,$id)
 	{
 		require_once 'lib/swift_required.php';
 
 		$subject = 'DUSPORTS Signup | Verification'; // Give the email a subject
-		$address="http://csedu.cf/dusports/lalbus/verify?email=".$Email."&hash=".$id;
 		$subject='DUSPORTS Signup | Verification'; // Give the email a subject 
 		$body = '
-		Hi,
-		Thanks for signing up!
+Hi,
+Welcome to DUSPORTS! We are excited to have you on DUSPORTS.
+ 
+Thanks for signing up!
 		
-		Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
+Your account has been created, you can login with the following email after you have activated your account by clicking the url below.
 		 
-		------------------------
-		Username: '.$FirstName.'
-		Password: '.$Password.'
-		------------------------
+------------------------
+Email : '.$email.'
+Username: '.$name.'
+------------------------
 		 
-		Please click this link to activate your account:
-		http://csedu.cf/dusports/dusports/verify.php?email='.$Email.'&hash='.$hash.'
+Please click this link to activate your account:
+http://csedu.cf/dusports/mail_verify?email='.$email.'&hash='.$id.'
 		
-		Thanks,
-		DUSPORTS
-		dusports17@gmail.com
-		'; 
-		'.$address;
+Thanks,
+DUSPORTS
 
+For any queries email us,
+dusports17@gmail.com'; 
+		
 			$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
 				->setUsername('dusports17@gmail.com')
 				->setPassword('dusports17')
@@ -110,7 +79,7 @@
 
 			$message = Swift_Message::newInstance($subject)
 				->setFrom(array('noreply@dusports.com' => 'DUSPORTS'))
-				->setTo(array($Email))
+				->setTo(array($email))
 				->setBody($body);
 
 			$result = $mailer->send($message);

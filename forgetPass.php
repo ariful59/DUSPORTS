@@ -27,7 +27,7 @@
 <body id="body" style="overflow:hidden;" onload="javascript:div_show()">
 	<div id="abc">
 	<div id="popupContact">
-		<form action="forgetPassMail.php" id="form" method="post" name="form">
+		<form action="emailcheck" id="form" method="post" name="form">
 		<img id="close" src="img/cross.jpg" onclick ="div_hide()">
 		<h2>Forget Password</h2>
 		<hr>

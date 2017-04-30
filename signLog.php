@@ -136,7 +136,7 @@
 					<input id="pass" type="password" class="input" data-type="password" name="Password" style="background-color: #709fa3;">
 				</div>
 				<div class="group">
-					<a href="forgetPass.php">Forgot your password?</a>
+					<a href="forgotpassword">Forgot your password?</a>
 					
 				</div><br>
 				<div class="group">

@@ -1,35 +1,66 @@
 <?php
-	$hash = md5( rand(0,1000));
-	$to=$Email;
-	$subject='Payment Confirmation'; // Give the email a subject 
-	$message = '
-	Hi,
-	Thanks for submiting the form!!
-	------------------------
-	Your are approve of the payment for Swimming pool. After finishing payment
-	on the nearby bank of Dhaka University.please click the link and submit
-	the scanned copy of our payment.
-	Payment Ammount and details are found in the website.
-	------------------------
-	 
-	Please click this link to complete your admission:
-	http://localhost/dusports/confirm.php?hash='.$hash.'
-	
-	Thanks,
-	DUSPORTS
-	dusports17@gmail.com
-	';                   
-	$headers = 'From:arifulamindu@gmail.com' . "\r\n";
-	$mail_sent=mail($to, $subject, $message, $headers); 
-	if($mail_sent)
-	{
-		echo "<script type='text/javascript'>alert('Please Check mail for details.');</script>";
-		header('location:index.php');
-	}else{
-		echo "<script type='text/javascript'>alert('Mail Failed!!');</script>";
-		header('location:index.php');
+$hash = md5( rand(1000,10000));
+	if(!isset($_SESSION)) 
+	{ 
+		session_start(); 
 	}
-	//header("location:confirm.php");
+	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+			$email=$_SESSION['email'];
+			$username=$_SESSION['username'];
+			$_SESSION['loggedin'] = true;
+			$_SESSION['username'] = $username;
+			$_SESSION['email'] = $email;
+			sendVerificationBySwift($email,$username,$hash);
+	}
+	else{
+		echo "<script>
+				alert('Something Error');
+				window.location.href='admissiongym';
+				</script>";
+	}
+	function sendVerificationBySwift($email,$name,$id)
+	{
+		require_once 'lib/swift_required.php';
+
+		$subject = 'DUSPORTS Signup | Verification'; // Give the email a subject
+		$subject='DUSPORTS Signup | Verification'; // Give the email a subject 
+		$body = '
+Hi' .$username; '
+
+Congrats, You have completed the form of Swimming pool for admission!
+ 
+------------------------
+Your are approve of the payment for Swimming. After finishing payment
+on the nearby bank of Dhaka University.please click the link and submit
+the scanned copy of our payment.
+Payment Ammount and details are found in the website.
+------------------------
+		 
+Please click this link to complete your admission:
+http://csedu.cf/dusports/swimmail_confirm?email='.$email.'&hash='.$id.'
+		
+Thanks,
+DUSPORTS
+
+For any queries email us,
+dusports17@gmail.com'; 
+		
+			$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
+				->setUsername('dusports17@gmail.com')
+				->setPassword('dusports17')
+				->setEncryption('ssl');
+
+			$mailer = Swift_Mailer::newInstance($transport);
+
+			$message = Swift_Message::newInstance($subject)
+				->setFrom(array('noreply@dusports.com' => 'DUSPORTS'))
+				->setTo(array($email))
+				->setBody($body);
+
+			$result = $mailer->send($message);
+	}
 	
+	
+?>	
 	
 ?>

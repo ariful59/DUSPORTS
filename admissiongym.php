@@ -1,9 +1,15 @@
 <?php
 	session_start();
 	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-		$email=$_SESSION['email'];
+			$email=$_SESSION['email'];
+			$username=$_SESSION['username'];
+			$_SESSION['loggedin'] = true;
+			$_SESSION['username'] = $username;
+			$_SESSION['email'] = $email;		
 	}
-	$conn = new mysqli('localhost', 'root', '', 'WebProject');
+	 $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+   
+	//$conn = new mysqli('localhost', 'root', '', 'WebProject');
 	if($conn->connect_errno){
         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }	
@@ -48,7 +54,7 @@
 			$payingData=mysqli_real_escape_string($conn,file_get_contents($_FILES["paying_slip"]["tmp_name"]));
 			
 			 $conn->query("INSERT INTO gym(name,father_name,mother_name,designation,subject,date_of_birth,profession,nationality,religion,gender,weight,height_foot,height_inches,educational_status,present_address,premanent_address,phone,physical_illness,image_name,image,email,paying_slip) VALUES('".$name."','".$father_name."','".$mother_name."','".$designation."','".$subject."','".$date_of_birth."','".$profession."','".$nationality."','".$religion."','".$gender."','".$weight."','".$height_foot."','".$height_inches."','".$educational_status."','".$present_address."','".$premanent_address."','".$phone."','".$physical_illness."','".$imageName."','".$imageData."','".$email."','".$payingData."')");
-			 header('location:admissiongymCheck.php');
+			 header('location:formgymcheck');
 		}
 	}
 
