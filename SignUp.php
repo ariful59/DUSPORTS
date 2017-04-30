@@ -17,7 +17,7 @@
 	if($count <1){
 		
 		$conn->query("INSERT INTO users(username,email,password, hash) VALUES('".$FirstName."','".$Email."','".$Password."','".$hash."')");
-		sendVerificationBySwift($FirstName,$Password,$hash);
+		//sendVerificationBySwift($FirstName,$Password,$hash);
 		
 		/*$to=$Email;
 		$subject='Signup | Verification'; // Give the email a subject 
