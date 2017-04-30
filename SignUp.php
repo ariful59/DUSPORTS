@@ -17,7 +17,7 @@
 	if($count <1){
 		
 		$conn->query("INSERT INTO users(username,email,password, hash) VALUES('".$FirstName."','".$Email."','".$Password."','".$hash."')");
-		//sendVerificationBySwift($FirstName,$Password,$hash);
+		sendVerificationBySwift($FirstName,$Password,$hash);
 		
 		/*$to=$Email;
 		$subject='Signup | Verification'; // Give the email a subject 
@@ -59,8 +59,8 @@
 				alert('Mail Failed!!');
 				window.location.href='signLog.php';
 				</script>";
-		}*/
-		echo "done";
+		}
+		*/
 	}
 	else{
 		echo "<script>
@@ -74,7 +74,7 @@
 		
 		
 		
-	/*function sendVerificationBySwift($email,$name,$id)
+	function sendVerificationBySwift($email,$name,$id)
 	{
 		require_once 'lib/swift_required.php';
 
@@ -114,5 +114,5 @@
 				->setBody($body);
 
 			$result = $mailer->send($message);
-	}*/
+	}
 ?>
