@@ -60,23 +60,21 @@
 				window.location.href='signLog.php';
 				</script>";
 		}*/
+		echo "done";
 	}
 	else{
-		//echo "<script type='text/javascript'>alert('You already registered.');</script>";
-		//include("signLog.php");
 		echo "<script>
 			alert('You already registered.');
 			window.location.href='signLog.php';
 			</script>";
 	}
 	}else{
-		//include("signLog.php");
 		header('location:signLog.php');
 	}
 		
 		
 		
-	function sendVerificationBySwift($email,$name,$id)
+	/*function sendVerificationBySwift($email,$name,$id)
 	{
 		require_once 'lib/swift_required.php';
 
@@ -116,5 +114,5 @@
 				->setBody($body);
 
 			$result = $mailer->send($message);
-	}
+	}*/
 ?>
