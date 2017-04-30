@@ -80,8 +80,8 @@
 	{
 		require_once 'lib/swift_required.php';
 
-		$subject = 'Lalbus Signup | Verification'; // Give the email a subject
-		$address="http://103.28.121.126/lalbus/verify?email=".$Email."&hash=".$id;
+		$subject = 'DUSPORTS Signup | Verification'; // Give the email a subject
+		$address="http://csedu.cf/dusports/lalbus/verify?email=".$Email."&hash=".$id;
 		$subject='DUSPORTS Signup | Verification'; // Give the email a subject 
 		$body = '
 		Hi,
