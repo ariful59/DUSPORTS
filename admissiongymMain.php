@@ -63,8 +63,8 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="dusports">HOME</a></li>
-					<li><a href="admissiongymMain.php">GYMAESIUM</a></li>
-                    <li class="active"><a href="admissiongym.">ADMISSION</a></li>
+					<li><a href="admissiongym">GYMAESIUM</a></li>
+                    <li class="active"><a href="admissiongym">ADMISSION</a></li>
                     
 					<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>

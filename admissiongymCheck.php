@@ -27,22 +27,21 @@
 	{
 		require_once 'lib/swift_required.php';
 
-		$subject = 'DUSPORTS Signup | Verification'; // Give the email a subject
-		$subject='DUSPORTS Signup | Verification'; // Give the email a subject 
+		$subject='DUSPORTS GYMNASIUM ADMISSION'; // Give the email a subject
 		$body = "
 Hi $name
 
-Congrats, You have completed the form of Swimming pool for admission!
+Congrats, You have completed the form of gymnasium for admission!
  
 ------------------------
-Your are approve of the payment for Swimming. After finishing payment
+Your are approve of the payment for gynmasium. After finishing payment
 on the nearby bank of Dhaka University.please click the link and submit
 the scanned copy of our payment.
 Payment Ammount and details are found in the website.
 ------------------------
 		 
 Please click this link to complete your admission:
-http://csedu.cf/dusports/swimmail_confirm?email=$email &hash=$id
+http://csedu.cf/dusports/gymmail_confirm?email=$email &hash=$id
 		
 Thanks,
 DUSPORTS

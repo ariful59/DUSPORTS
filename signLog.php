@@ -93,7 +93,7 @@
 							<a href="signLog" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Profile</a></li>
-								<li><a href="Logout.php">Logout</a></li>
+								<li><a href="logout">Logout</a></li>
 							</ul>
 						</li>
 				

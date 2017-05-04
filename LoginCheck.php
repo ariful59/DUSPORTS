@@ -7,7 +7,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 	$Email=$_SESSION['email'];
 	$_SESSION['email'] = $Email;
 	//echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
-	include("admissiongym.html");
+	header('location:admissiongym');
 } 
 else {
    //echo '<div class="statusmsg"><center><h1>Please log in first to see contents of this page.</h1></center></div>';
@@ -15,6 +15,6 @@ else {
 	echo "<script>
 			alert('At first you have to register/login.');
 			window.location.href='signLog.php';
-			</script>"
+			</script>";
 }
 ?>

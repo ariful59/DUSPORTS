@@ -19,15 +19,14 @@ $hash = md5( rand(1000,10000));
 	else{
 		echo "<script>
 				alert('Something Error');
-				window.location.href='admissiongym';
+				window.location.href='admissionswim';
 				</script>";
 	}
 	function sendVerificationBySwift($email,$name,$id)
 	{
 		require_once 'lib/swift_required.php';
 
-		$subject = 'DUSPORTS Signup | Verification'; // Give the email a subject
-		$subject='DUSPORTS Signup | Verification'; // Give the email a subject 
+		$subject = 'DUSPORTS SWIMMING POOL ADMISSION'; // Give the email a subject
 		$body = "
 Hi .$name.
 

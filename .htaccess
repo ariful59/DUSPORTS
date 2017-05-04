@@ -24,3 +24,4 @@ RewriteRule	^forgotpassword?$ forgetPass.php
 RewriteRule	^emailcheck?$ forgetPassMail.php
 RewriteRule	^confirmpassword?$ forgetpasswordsubmit.php
 RewriteRule	^updatepassword?$ updatepassword.php
+RewriteRule	^logout?$ Logout.php

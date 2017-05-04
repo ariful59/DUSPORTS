@@ -46,8 +46,8 @@
 	{
 		require_once 'lib/swift_required.php';
 
-		$subject = 'DUSPORTS Signup | Verification'; // Give the email a subject
-		$subject='DUSPORTS Signup | Verification'; // Give the email a subject 
+		$subject = 'DUSPORTS SIGNUP | VERIFICATION'; // Give the email a subject
+		//$subject='DUSPORTS Signup | Verification'; // Give the email a subject
 		$body = '
 Hi,
 Welcome to DUSPORTS! We are excited to have you on DUSPORTS.

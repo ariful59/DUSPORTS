@@ -39,7 +39,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="dusports">HOME</a></li>
 					<li class="active"><a href="swim">SWIMMING</a></li>
-                    <li id="myBtn"><a href="LoginCheckswi">ADMISSION</a></li>
+                    <li id="myBtn"><a href="admissionswim">ADMISSION</a></li>
 					 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
@@ -64,7 +64,7 @@
 							<a href="signLog" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Profile</a></li>
-								<li><a href="Logout.php">Logout</a></li>
+								<li><a href="logout">Logout</a></li>
 							</ul>
 						</li>
 				
