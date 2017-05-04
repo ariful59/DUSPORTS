@@ -13,8 +13,9 @@
 	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	
 		<style>
-	px{	
-		border: 2px solid #00EBEB;
+		px{	
+		border: 3px solid  #525252;
+		box-shadow: 2px 2px 2px  #525252;
 		padding: 5px;
 	}
 	</style>
