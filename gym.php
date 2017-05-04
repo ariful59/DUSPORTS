@@ -39,7 +39,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="dusports">HOME</a></li>
 					<li class="active"><a href="gym">GYMNESIUM</a></li>
-                    <li><a href="admissiongym">ADMISSION</a></li>
+                    <li><a href="LoginCheckgym">ADMISSION</a></li>
                     
 					 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>

@@ -14,7 +14,7 @@ RewriteRule ^signcheck?$ SignUp.php
 RewriteRule ^termgym?$ termgym.php
 RewriteRule ^termswim?$ termswim.php
 RewriteRule	^LoginCheckgym?$ LoginCheckgym.php
-RewriteRule	^LoginCheckswi?$ LoginCheckswi.php
+RewriteRule	^LoginCheckswim?$ LoginCheckswi.php
 RewriteRule	^mail_verify?$ verify.php
 RewriteRule	^gymmail_confirm?$ confirmgym.php
 RewriteRule	^swimmail_confirm?$ confirm.php
