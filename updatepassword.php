@@ -23,12 +23,12 @@
 			header('location:dusports');
 		}else
 		{
+			echo "Hello";
 			echo "<script>
 				alert('Failed to update.');
 				window.location.href='signLog';
 				</script>";
 		}
-	}
 
 						
 ?>

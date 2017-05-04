@@ -25,7 +25,7 @@
 		$subject = 'DUSPORTS Signup | Verification'; // Give the email a subject
 		$subject='DUSPORTS Signup | Verification'; // Give the email a subject 
 		$body = '
-Hi' .$name;'
+Hi' .$name; .'
 
 Congrats, You have completed the form of Gymnasium for admission!
  

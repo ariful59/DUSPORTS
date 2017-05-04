@@ -5,7 +5,7 @@ RewriteRule ^swim?$ swim.php
 RewriteRule ^about-us?$ about-us.php
 RewriteRule ^admissionswim?$ admissionswimMain.php
 RewriteRule ^admissiongym?$  admissiongymMain.php
-RewriteRule ^contt-us?$  contact-us.php
+RewriteRule ^contact-us?$  contact-us.php
 RewriteRule ^news?$  news.php
 RewriteRule ^schedulegym?$ schedulegym.php
 RewriteRule ^scheduleswim?$ scheduleswim.php

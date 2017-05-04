@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	date_default_timezone_set('Indian/Comoro');
 	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 			$email=$_SESSION['email'];
 			$username=$_SESSION['username'];
