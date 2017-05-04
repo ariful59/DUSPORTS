@@ -74,7 +74,7 @@
 		<input id="pass1" name="pass1" placeholder="Confirm Password" type="password" required="required" onkeyup="checker(); return false;">
 		<h8 id="hello"></h8><br><br>
 		<br>
-		<button name="send" id="submit" class="test"  type="submit" disabled value='SignUp'>Send</button>
+		<button name="send" id="submit" class="test"  type="submit" value='SignUp' disabled>Send</button>
 		</form>
 	</div>
 	</div>

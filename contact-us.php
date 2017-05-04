@@ -49,7 +49,13 @@
                     <li><a href="dusports">HOME</a></li>
 					<li><a href="gym">GYMNESIUM</a></li>
                     <li><a href="swim">SWIMMING</a></li>
-                    <li><a href="news">NEWS</a></li>
+                    <li class="dropdown">
+                        <a href="about-us" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">News</a></li>
+                            <li><a href="Logout.php">Live</a></li>
+                        </ul>
+                    </li>
                     <li><a href="about-us">ABOUT US</a></li> 
                     
 					<li class="active"><a href="contact-us">CONTACT</a></li>

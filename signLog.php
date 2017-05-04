@@ -71,7 +71,13 @@
                     <li><a href="dusports">HOME</a></li>
 					<li><a href="gym">GYMNASIUM</a></li>
                     <li><a href="swim">SWIMMING</a></li>
-                    <li><a href="news">NEWS</a></li>
+                    <li class="dropdown">
+                        <a href="about-us" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">News</a></li>
+                            <li><a href="Logout.php">Live</a></li>
+                        </ul>
+                    </li>
                     <li><a href="about-us">ABOUT US</a></li> 
                     <li><a href="contact-us">CONTACT</a></li>
 					
@@ -145,7 +151,7 @@
 				<div class="hr"></div>
 				</div>
 			</form>
-			<form action="SignUp.php" method="post">
+			<form action="signcheck" method="post">
 			
 				<div class="sign-up-htm">
 				<div class="group">
