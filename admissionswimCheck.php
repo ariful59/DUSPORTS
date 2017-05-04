@@ -11,6 +11,10 @@ $hash = md5( rand(1000,10000));
 			$_SESSION['username'] = $username;
 			$_SESSION['email'] = $email;
 			sendVerificationBySwift($email,$username,$hash);
+             echo "<script>
+				alert('A email is sent to your email account. To complete your admission please check the mail ');
+				window.location.href='admissionswim';
+				</script>";
 	}
 	else{
 		echo "<script>
@@ -24,8 +28,8 @@ $hash = md5( rand(1000,10000));
 
 		$subject = 'DUSPORTS Signup | Verification'; // Give the email a subject
 		$subject='DUSPORTS Signup | Verification'; // Give the email a subject 
-		$body = '
-Hi '.$name.'
+		$body = "
+Hi .$name.
 
 Congrats, You have completed the form of Swimming pool for admission!
  
@@ -37,13 +41,13 @@ Payment Ammount and details are found in the website.
 ------------------------
 		 
 Please click this link to complete your admission:
-http://csedu.cf/dusports/swimmail_confirm?email='.$email.'&hash='.$id.'
+http://csedu.cf/dusports/swimmail_confirm?email=$email &hash=$id
 		
 Thanks,
 DUSPORTS
 
 For any queries email us,
-dusports17@gmail.com'; 
+dusports17@gmail.com";
 		
 			$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
 				->setUsername('dusports17@gmail.com')
