@@ -139,7 +139,7 @@
     <div class='panel panel-primary dialog-panel' style='background-color:#dbe8ff'> 
     <div class='panel-body'>
 	  
-    <form class='form-horizontal' id='form' role='form' action="confirmswimdatabase.php" method="POST" enctype="multipart/form-data">
+    <form class='form-horizontal' id='form' role='form' action="confirmswimdata" method="POST" enctype="multipart/form-data">
 	<center>
 	<div class='image_pos_con'>	
 	<table>
