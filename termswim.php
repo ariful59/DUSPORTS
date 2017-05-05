@@ -45,7 +45,7 @@
                         <ul class="dropdown-menu">
 							<li><a href="schedulegym">SCHEDULE</a></li>
                             <li  class="active"><a href="termswim">TERMS & POLICY</a></li>
-                            <li><a href="#">NOTICE BOARD</a></li>
+                            <li><a href="notice">NOTICE BOARD</a></li>
                         </ul>
                     </li>
                     <li><a href="about-us">ABOUT US</a></li> 

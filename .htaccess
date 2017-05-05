@@ -27,5 +27,8 @@ RewriteRule	^updatepassword?$ updatepassword.php
 RewriteRule	^logout?$ Logout.php
 RewriteRule	^confirmswimdata?$ confirmswimdatabase.php
 RewriteRule	^confirmgymdata?$  confirmgymdatabase.php
+RewriteRule ^live?$ live.php
+RewriteRule ^notice?$ notice.php
+RewriteRule	^news?$  news.php
 
 

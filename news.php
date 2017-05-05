@@ -27,21 +27,10 @@
 
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-		<style>
-	px{	
-		border: 3px solid  #525252;
-		box-shadow: 2px 2px 2px  #525252;
-		padding: 5px;
-	}
-	</style>
+
 </head>
 
 <body>
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-<![endif]-->
-
-
 <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
     <div class="container">
         <div class="navbar-header">
@@ -58,38 +47,53 @@
                 <li><a href="dusports">HOME</a></li>
                 <li><a href="gym">GYMNASIUM</a></li>
                 <li><a href="swim">SWIMMING</a></li>
-                <li class="active"><a href="news">NEWS</a></li>
+                <li class="active" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="news">News</a></li>
+                        <li><a href="live">Live</a></li>
+                    </ul>
+                </li>
                 <li><a href="about-us">ABOUT US</a></li>
                 <li><a href="contact-us">CONTACT</a></li>
+
                 <?php
-				session_start();
-					if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-						$username=$_SESSION['username'];
-						$_SESSION['loggedin'] = true;
-						$_SESSION['username'] = $username;
-					?>
-						<li class="dropdown">
-							<a href="signLog" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Profile</a></li>
-								<li><a href="Logout.php">Logout</a></li>
-							</ul>
-						</li>
-				
-					<?php 
-					} 
-					 else{
-						$username="REGISTER"; ?>
-					<li ><a href="signLog"><?php echo $username ?></a></li>				
-               
-				<?php			   
-					}
-					?>		
-				</ul>
+                if(!isset($_SESSION))
+                {
+                    session_start();
+                }
+                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                    $username=$_SESSION['username'];
+                    $_SESSION['loggedin'] = true;
+                    $_SESSION['username'] = $username;
+                    $Email=$_SESSION['email'];
+                    $_SESSION['email'] = $Email;
+                    //echo $Email;
+
+                    ?>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="logout">Logout</a></li>
+                        </ul>
+                    </li>
+
+                    <?php
+                }
+                else{
+                    $username="REGISTER"; ?>
+                    <li ><a href="signLog"><?php echo $username ?></a></li>
+
+                    <?php
+                }
+                ?>
+
+
+            </ul>
         </div>
     </div>
 </header>
-
 <!-- Page Title -->
 <div class="section section-breadcrumbs">
     <div class="container">
@@ -101,126 +105,18 @@
     </div>
 </div>
 
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <!-- Blog Post Excerpt -->
-            <div class="col-sm-6">
-                <div class="blog-post blog-single-post">
-                    <div class="single-post-title">
-                        <h2>Exerci Tation Ullamcorper</h2>
-                    </div>
+<?php
+	$con=mysqli_connect("localhost","root","","WebProject");
 
-                    <div class="single-post-image">
-                        <img src="img/blog/2.jpg" alt="Post Title">
-                    </div>
+	$result = $con->query("select * from news;");
 
-                    <div class="single-post-info">
-                        <i class="glyphicon glyphicon-time"></i>15 OCT, 2014 <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
-                    </div>
+	while($row = $result->fetch_assoc()){
+		echo "<div class=\"jumbotron text-center\">";
+		echo "<p>".$row['Date']."<br> ".$row['News']."<br></p>";
+		echo "</div>";
+	}
 
-                    <div class="single-post-content">
-                        <p>
-                            Vivamus euismod elit ac libero facilisis tristique. Duis mollis non ligula vel tincidunt. Nulla consectetur libero id nunc ornare, vel vulputate tellus mollis. Sed quis nulla magna. Integer rhoncus sem quis ultrices lobortis. Maecenas tempus nulla quis dolor vulputate egestas. Phasellus cursus tortor quis massa faucibus fermentum vel sit amet tortor. Phasellus vehicula lorem et tortor luctus, a dignissim lacus tempor. Aliquam volutpat molestie metus sit amet aliquam. Duis vestibulum quam tortor, sed ultrices orci sagittis nec.
-                        </p>
-                        <a href="blog-post.html" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Blog Post Excerpt -->
-
-
-            <!-- Blog Post Excerpt -->
-            <div class="col-sm-6">
-                <div class="blog-post blog-single-post">
-                    <div class="single-post-title">
-                        <h2>Exerci Tation Ullamcorper</h2>
-                    </div>
-
-                    <div class="single-post-image">
-                        <img src="img/blog/1.jpg" alt="Post Title">
-                    </div>
-
-                    <div class="single-post-info">
-                        <i class="glyphicon glyphicon-time"></i>15 OCT, 2014 <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
-                    </div>
-
-                    <div class="single-post-content">
-                        <p>
-                            Vivamus euismod elit ac libero facilisis tristique. Duis mollis non ligula vel tincidunt. Nulla consectetur libero id nunc ornare, vel vulputate tellus mollis. Sed quis nulla magna. Integer rhoncus sem quis ultrices lobortis. Maecenas tempus nulla quis dolor vulputate egestas. Phasellus cursus tortor quis massa faucibus fermentum vel sit amet tortor. Phasellus vehicula lorem et tortor luctus, a dignissim lacus tempor. Aliquam volutpat molestie metus sit amet aliquam. Duis vestibulum quam tortor, sed ultrices orci sagittis nec.
-                        </p>
-                        <a href="blog-post.html" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Blog Post Excerpt -->
-
-            <!-- Blog Post Excerpt -->
-            <div class="col-sm-6">
-                <div class="blog-post blog-single-post">
-                    <div class="single-post-title">
-                        <h2>Exerci Tation Ullamcorper</h2>
-                    </div>
-
-                    <div class="single-post-image">
-                        <img src="img/blog/3.jpg" alt="Post Title">
-                    </div>
-
-                    <div class="single-post-info">
-                        <i class="glyphicon glyphicon-time"></i>15 OCT, 2014 <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
-                    </div>
-
-                    <div class="single-post-content">
-                        <p>
-                            Vivamus euismod elit ac libero facilisis tristique. Duis mollis non ligula vel tincidunt. Nulla consectetur libero id nunc ornare, vel vulputate tellus mollis. Sed quis nulla magna. Integer rhoncus sem quis ultrices lobortis. Maecenas tempus nulla quis dolor vulputate egestas. Phasellus cursus tortor quis massa faucibus fermentum vel sit amet tortor. Phasellus vehicula lorem et tortor luctus, a dignissim lacus tempor. Aliquam volutpat molestie metus sit amet aliquam. Duis vestibulum quam tortor, sed ultrices orci sagittis nec.
-                        </p>
-                        <a href="blog-post.html" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Blog Post Excerpt -->
-
-            <!-- Blog Post Excerpt -->
-            <div class="col-sm-6">
-                <div class="blog-post blog-single-post">
-                    <div class="single-post-title">
-                        <h2>Exerci Tation Ullamcorper</h2>
-                    </div>
-
-                    <div class="single-post-image">
-                        <img src="img/blog/4.jpg" alt="Post Title">
-                    </div>
-
-                    <div class="single-post-info">
-                        <i class="glyphicon glyphicon-time"></i>15 OCT, 2014 <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
-                    </div>
-
-                    <div class="single-post-content">
-                        <p>
-                            Vivamus euismod elit ac libero facilisis tristique. Duis mollis non ligula vel tincidunt. Nulla consectetur libero id nunc ornare, vel vulputate tellus mollis. Sed quis nulla magna. Integer rhoncus sem quis ultrices lobortis. Maecenas tempus nulla quis dolor vulputate egestas. Phasellus cursus tortor quis massa faucibus fermentum vel sit amet tortor. Phasellus vehicula lorem et tortor luctus, a dignissim lacus tempor. Aliquam volutpat molestie metus sit amet aliquam. Duis vestibulum quam tortor, sed ultrices orci sagittis nec.
-                        </p>
-                        <a href="blog-post.html" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Blog Post Excerpt -->
-
-            <!-- Pagination -->
-            <div class="pagination-wrapper ">
-                <ul class="pagination pagination-sm">
-                    <li class="disabled"><a href="#">Previous</a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">Next</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</div>
+?>
 
 <div class="footer">
     <div class="container">

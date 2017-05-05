@@ -74,8 +74,8 @@
                     <li class="dropdown">
                         <a href="about-us" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">News</a></li>
-                            <li><a href="Logout.php">Live</a></li>
+                            <li><a href="news">News</a></li>
+                            <li><a href="live">Live</a></li>
                         </ul>
                     </li>
                     <li><a href="about-us">ABOUT US</a></li> 
