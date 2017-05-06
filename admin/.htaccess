@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteRule	^live?$ livedash.php
+RewriteRule	^studentlist?$ tableadmin.php
+RewriteRule	^notice?$ notificationadmin.php
+RewriteRule	^news?$ newsadmin.php
+RewriteRule	^home?$ dashboard.php
+RewriteRule	^logout?$ logout.php
+
+
+
+

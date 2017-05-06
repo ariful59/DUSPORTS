@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
     <style>
         .change {
             margin-left: 30%;
@@ -33,7 +37,73 @@
 
 <body>
 
+<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="dusports"><img src="img/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="dusports">HOME</a></li>
+                <li><a href="gym">GYMNASIUM</a></li>
+                <li><a href="swim">SWIMMING</a></li>
+                <li class="active" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li "><a href="news">News</a></li>
+                        <li class="active"><a href="live">Live</a></li>
+                    </ul>
+                </li>
+                <li><a href="about-us">ABOUT US</a></li>
+                <li><a href="contact-us">CONTACT</a></li>
 
+                <?php
+                if(!isset($_SESSION))
+                {
+                    session_start();
+                }
+                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                    $username=$_SESSION['username'];
+                    $_SESSION['loggedin'] = true;
+                    $_SESSION['username'] = $username;
+                    $Email=$_SESSION['email'];
+                    $_SESSION['email'] = $Email;
+                    //echo $Email;
+
+                    ?>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="logout">Logout</a></li>
+                        </ul>
+                    </li>
+
+                    <?php
+                }
+                else{
+                    $username="REGISTER"; ?>
+                    <li ><a href="signLog"><?php echo $username ?></a></li>
+
+                    <?php
+                }
+                ?>
+
+
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+
+<section id="main-slider" class="no-margin">
 <div class="rca-container">
     <div class="change">
         <!--Logo Holder-->
@@ -122,6 +192,7 @@
     </div>
 </div>
 </div>
+
 
 <script>
         function load() {
@@ -229,6 +300,7 @@
 			});
 		</script>
 
+</section>
 </body>
 </html>
 

@@ -27,8 +27,8 @@ $hash = md5( rand(1000,10000));
 		require_once 'lib/swift_required.php';
 
 		$subject = 'DUSPORTS SWIMMING POOL ADMISSION'; // Give the email a subject
-		$body = "
-Hi .$name.
+		$body = '
+Hi '.$name.'
 
 Congrats, You have completed the form of Swimming pool for admission!
  
@@ -40,13 +40,13 @@ Payment Ammount and details are found in the website.
 ------------------------
 		 
 Please click this link to complete your admission:
-http://csedu.cf/dusports/swimmail_confirm?email=$email &hash=$id
+http://csedu.cf/dusports/swimmail_confirm?email='.$email.'&hash='.$id.'
 		
 Thanks,
 DUSPORTS
 
 For any queries email us,
-dusports17@gmail.com";
+dusports17@gmail.com';
 		
 			$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
 				->setUsername('dusports17@gmail.com')

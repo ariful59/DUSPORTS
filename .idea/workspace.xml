@@ -2,29 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa5edc25-edc4-401b-803d-c3d29845af81" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adminPanel/gymupdate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adminPanel/swimupdate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adminPanel/user_information.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adminPanel/user_informationgym.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notice.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reject.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/logout.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/SignLogAdminCheck.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/css/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/css/light-bootstrap-dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/css/pe-icon-7-stroke.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/fonts/Pe-icon-7-stroke.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/fonts/Pe-icon-7-stroke.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/fonts/Pe-icon-7-stroke.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/fonts/Pe-icon-7-stroke.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/back.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/default-avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/faces/face-0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/faces/face-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/faces/face-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/faces/face-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/faces/face-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/faces/face-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/faces/face-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/faces/face-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/faces/tim_vector.jpe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/loading-bubbles.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/new_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/sidebar-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/sidebar-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/sidebar-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/sidebar-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/sidebar-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/img/tim_80x80.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/js/bootstrap-checkbox-radio-switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/js/bootstrap-notify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/js/bootstrap-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/js/chartist.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/js/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/js/jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/js/light-bootstrap-dashboard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_alerts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_chartist.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_checkbox-radio-switch.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_dropdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_footers.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_inputs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_misc.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_navbars.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_responsive.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_sidebar-and-main-panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_typography.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_chartist.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_inputs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_labels.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_morphing-buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_navbars.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_social-buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_transparency.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/lbd/mixins/_vendor-prefixes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/assets/sass/light-bootstrap-dashboard.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/css/lavenderTheme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/get_football.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/gymupdate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/img/football.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/live.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/livedash.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/newsadmin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/notificationadmin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/show_news.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/show_notice.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/signLogAdmin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/submit_football.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/submit_news.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/submit_notice.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/swimupdate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/tableadmin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/user_information.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adminPanel/user_informationgym.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about-us.php" afterPath="$PROJECT_DIR$/about-us.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admissiongymMain.php" afterPath="$PROJECT_DIR$/admissiongymMain.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admissionswimMain.php" afterPath="$PROJECT_DIR$/admissionswimMain.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoginCheckgym.php" afterPath="$PROJECT_DIR$/LoginCheckgym.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoginCheckswi.php" afterPath="$PROJECT_DIR$/LoginCheckswi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admissiongymCheck.php" afterPath="$PROJECT_DIR$/admissiongymCheck.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admissionswimCheck.php" afterPath="$PROJECT_DIR$/admissionswimCheck.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/confirm.php" afterPath="$PROJECT_DIR$/confirm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/confirmgym.php" afterPath="$PROJECT_DIR$/confirmgym.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-us.php" afterPath="$PROJECT_DIR$/contact-us.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gym.php" afterPath="$PROJECT_DIR$/gym.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/live.php" afterPath="$PROJECT_DIR$/live.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.php" afterPath="$PROJECT_DIR$/news.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedulegym.php" afterPath="$PROJECT_DIR$/schedulegym.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scheduleswim.php" afterPath="$PROJECT_DIR$/scheduleswim.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signLog.php" afterPath="$PROJECT_DIR$/signLog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swim.php" afterPath="$PROJECT_DIR$/swim.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/termgym.php" afterPath="$PROJECT_DIR$/termgym.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/termswim.php" afterPath="$PROJECT_DIR$/termswim.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,21 +112,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="signLogAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminPanel/signLogAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2144">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="show_notice.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminPanel/show_notice.php">
+        <entry file="file://$PROJECT_DIR$/admin/show_notice.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="627">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <marker date="1494023270139" expanded="true" signature="482:502" ph="select * fro... notice" />
               </folding>
@@ -58,106 +124,129 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_news.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminPanel/show_news.php">
+      <file leaf-file-name="submit_football.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/submit_football.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="397">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
-                <marker date="1494023274144" expanded="true" signature="478:496" ph="select * fro... news" />
+                <marker date="1494069494068" expanded="true" signature="501:646" ph="INSERT INTO football... " />
+                <marker date="1494069494068" expanded="true" signature="1252:1362" ph="UPDATE footb... " />
+                <marker date="1494069494068" expanded="true" signature="1725:1829" ph="Insert into goal_giver... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notificationadmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminPanel/notificationadmin.php">
+      <file leaf-file-name="submit_news.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/submit_news.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6208">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="933">
+              <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding>
-                <marker date="1494016600281" expanded="true" signature="5989:6009" ph="select * fro... notice" />
+                <marker date="1494067177283" expanded="true" signature="391:450" ph="INSERT INTO news... " />
+                <marker date="1494067177283" expanded="true" signature="971:1003" ph="delete from " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newsadmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminPanel/newsadmin.php">
+      <file leaf-file-name="submit_notice.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/submit_notice.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-565">
-              <caret line="172" column="31" lean-forward="false" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
+            <state relative-caret-position="933">
+              <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
-                <marker date="1494023370009" expanded="true" signature="6061:6079" ph="select * fro... news" />
+                <marker date="1494067205577" expanded="true" signature="395:460" ph="INSERT INTO notice... " />
+                <marker date="1494067205577" expanded="true" signature="995:1031" ph="delete from " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="livedash.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminPanel/livedash.php">
+      <file leaf-file-name="swimupdate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/swimupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5642">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding>
+                <marker date="1494069494036" expanded="true" signature="383:455" ph="UPDATE admin... " />
+                <marker date="1494069494036" expanded="true" signature="491:531" ph="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tableadmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/tableadmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="143" column="22" lean-forward="false" selection-start-line="143" selection-start-column="22" selection-end-line="143" selection-end-column="22" />
+              <folding>
+                <marker date="1494069572395" expanded="true" signature="5628:5667" ph="select * fro... admin_gym" />
+                <marker date="1494069572395" expanded="true" signature="5863:5903" ph="SELECT * FRO... users" />
+                <marker date="1494069572395" expanded="true" signature="6990:7030" ph="select * fro... admin_swim" />
+                <marker date="1494069572395" expanded="true" signature="7225:7265" ph="select * fro... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_information.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/user_information.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2626">
+              <caret line="113" column="23" lean-forward="false" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="live.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminPanel/live.php">
+      <file leaf-file-name="user_informationgym.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/user_informationgym.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6868">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="3696">
+              <caret line="112" column="14" lean-forward="false" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="14" />
               <folding>
-                <marker date="1493979493253" expanded="true" signature="5944:5968" ph="SELECT * FRO... goal_giver" />
+                <marker date="1494069572454" expanded="true" signature="4042:4080" ph="SELECT * FRO... gym" />
+                <marker date="1494069572454" expanded="true" signature="6452:6485" ph="..." />
+                <marker date="1494069572454" expanded="true" signature="6489:6769" ph="..." />
+                <marker date="1494069572454" expanded="true" signature="6545:6731" ph="..." />
+                <marker date="1494069572454" expanded="false" signature="6589:6612" ph="data:" />
+                <marker date="1494069572454" expanded="true" signature="6837:6868" ph="..." />
+                <marker date="1494069572454" expanded="true" signature="6872:7121" ph="..." />
+                <marker date="1494069572454" expanded="true" signature="6958:7116" ph="..." />
+                <marker date="1494069572454" expanded="false" signature="6970:6993" ph="data:" />
+                <marker date="1494069572454" expanded="true" signature="7156:7200" ph="SELECT * FRO... admin_gym" />
+                <marker date="1494069572454" expanded="true" signature="7385:7417" ph="..." />
+                <marker date="1494069572454" expanded="true" signature="7421:7653" ph="..." />
+                <marker date="1494069572454" expanded="true" signature="7495:7648" ph="..." />
+                <marker date="1494069572454" expanded="false" signature="7507:7530" ph="data:" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="gymupdate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminPanel/gymupdate.php">
+        <entry file="file://$PROJECT_DIR$/admin/gymupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+            <state relative-caret-position="297">
+              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
-                <marker date="1494022750385" expanded="true" signature="317:324" ph="UPDATE admin... " />
-                <marker date="1494022750385" expanded="true" signature="317:388" ph="UPDATE users... " />
-                <marker date="1494022750385" expanded="true" signature="424:464" ph="SELECT * FRO... users" />
+                <marker date="1494069351350" expanded="true" signature="384:455" ph="UPDATE admin... " />
+                <marker date="1494069351350" expanded="true" signature="491:531" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_football.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminPanel/get_football.php">
+      <file leaf-file-name="show_news.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/show_news.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="462">
+              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding>
-                <marker date="1494022750354" expanded="true" signature="171:205" ph="SELECT * fro... football" />
-                <marker date="1494022750354" expanded="true" signature="344:370" ph="SELECT * FRO... goal_giver" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/adminPanel/dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2479">
-              <caret line="150" column="49" lean-forward="true" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="49" />
-              <folding>
-                <marker date="1494022841784" expanded="true" signature="4999:5037" ph="select * fro... admin_gym" />
-                <marker date="1494022841784" expanded="true" signature="5315:5686" ph="..." />
-                <marker date="1494022841784" expanded="true" signature="5466:5681" ph="..." />
-                <marker date="1494022841784" expanded="true" signature="5527:5633" ph="..." />
-                <marker date="1494022841784" expanded="true" signature="6359:6383" ph="select * fro... admin_swim" />
-                <marker date="1494022841784" expanded="true" signature="6359:6398" ph="select * fro... admin_swim" />
-                <marker date="1494022841784" expanded="true" signature="6686:6991" ph="..." />
-                <marker date="1494022841784" expanded="true" signature="6816:6986" ph="..." />
-                <marker date="1494022841784" expanded="true" signature="6870:6960" ph="..." />
+                <marker date="1494049878267" expanded="true" signature="480:498" ph="select * fro... news" />
               </folding>
             </state>
           </provider>
@@ -171,49 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LoginCheckgym.php" />
-        <option value="$PROJECT_DIR$/admissiongym.php" />
-        <option value="$PROJECT_DIR$/admissiongymCheck.php" />
-        <option value="$PROJECT_DIR$/admissionswimCheck.php" />
-        <option value="$PROJECT_DIR$/indexLogInCheck.php" />
-        <option value="$PROJECT_DIR$/LoginCheckswi.php" />
-        <option value="$PROJECT_DIR$/LoginCheck.php" />
-        <option value="$PROJECT_DIR$/Logout.php" />
-        <option value="$PROJECT_DIR$/forgetpasswordsubmit.php" />
-        <option value="$PROJECT_DIR$/forgetPassMail.php" />
-        <option value="$PROJECT_DIR$/updatepassword.php" />
-        <option value="$PROJECT_DIR$/confirmswimdatabase.php" />
-        <option value="$PROJECT_DIR$/reject.php" />
-        <option value="$PROJECT_DIR$/about-us.php" />
-        <option value="$PROJECT_DIR$/admissiongymMain.php" />
-        <option value="$PROJECT_DIR$/admissionswimMain.php" />
-        <option value="$PROJECT_DIR$/confirm.php" />
-        <option value="$PROJECT_DIR$/confirmgym.php" />
-        <option value="$PROJECT_DIR$/contact-us.php" />
-        <option value="$PROJECT_DIR$/gym.php" />
-        <option value="$PROJECT_DIR$/schedulegym.php" />
-        <option value="$PROJECT_DIR$/scheduleswim.php" />
-        <option value="$PROJECT_DIR$/signLog.php" />
-        <option value="$PROJECT_DIR$/swim.php" />
-        <option value="$PROJECT_DIR$/termgym.php" />
-        <option value="$PROJECT_DIR$/termswim.php" />
-        <option value="$PROJECT_DIR$/notice.php" />
-        <option value="$PROJECT_DIR$/news.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/verify.php" />
-        <option value="$PROJECT_DIR$/LogIn.php" />
-        <option value="$PROJECT_DIR$/SignUp.php" />
-        <option value="$PROJECT_DIR$/admissionswim.php" />
-        <option value="$PROJECT_DIR$/confirmgymdatabase.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/adminPanel/get_football.php" />
-        <option value="$PROJECT_DIR$/adminPanel/gymupdate.php" />
-        <option value="$PROJECT_DIR$/adminPanel/dashboard.php" />
-        <option value="$PROJECT_DIR$/get_football.php" />
-        <option value="$PROJECT_DIR$/adminPanel/user_informationgym.php" />
-        <option value="$PROJECT_DIR$/adminPanel/user_information.php" />
-        <option value="$PROJECT_DIR$/adminPanel/swimupdate.php" />
-        <option value="$PROJECT_DIR$/adminPanel/submit_notice.php" />
         <option value="$PROJECT_DIR$/adminPanel/tableadmin.php" />
         <option value="$PROJECT_DIR$/adminPanel/submit_news.php" />
         <option value="$PROJECT_DIR$/adminPanel/submit_football.php" />
@@ -221,6 +267,50 @@
         <option value="$PROJECT_DIR$/adminPanel/show_notice.php" />
         <option value="$PROJECT_DIR$/adminPanel/show_news.php" />
         <option value="$PROJECT_DIR$/adminPanel/newsadmin.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/user_informationgym.php" />
+        <option value="$PROJECT_DIR$/user_information.php" />
+        <option value="$PROJECT_DIR$/SignLogAdminCheck.php" />
+        <option value="$PROJECT_DIR$/livedash.php" />
+        <option value="$PROJECT_DIR$/tableadmin.php" />
+        <option value="$PROJECT_DIR$/submit_notice.php" />
+        <option value="$PROJECT_DIR$/submit_news.php" />
+        <option value="$PROJECT_DIR$/submit_football.php" />
+        <option value="$PROJECT_DIR$/show_news.php" />
+        <option value="$PROJECT_DIR$/notificationadmin.php" />
+        <option value="$PROJECT_DIR$/newsadmin.php" />
+        <option value="$PROJECT_DIR$/signLog.php" />
+        <option value="$PROJECT_DIR$/news.php" />
+        <option value="$PROJECT_DIR$/live.php" />
+        <option value="$PROJECT_DIR$/LoginCheckgym.php" />
+        <option value="$PROJECT_DIR$/LoginCheckswi.php" />
+        <option value="$PROJECT_DIR$/admissiongym.php" />
+        <option value="$PROJECT_DIR$/admissiongymCheck.php" />
+        <option value="$PROJECT_DIR$/admissionswim.php" />
+        <option value="$PROJECT_DIR$/admissionswimCheck.php" />
+        <option value="$PROJECT_DIR$/confirm.php" />
+        <option value="$PROJECT_DIR$/confirmswimdatabase.php" />
+        <option value="$PROJECT_DIR$/LogIn.php" />
+        <option value="$PROJECT_DIR$/confirmgymdatabase.php" />
+        <option value="$PROJECT_DIR$/confirmgym.php" />
+        <option value="$PROJECT_DIR$/admin/logout.php" />
+        <option value="$PROJECT_DIR$/admin/.htaccess" />
+        <option value="$PROJECT_DIR$/admin/livedash.php" />
+        <option value="$PROJECT_DIR$/admin/notificationadmin.php" />
+        <option value="$PROJECT_DIR$/admin/show_news.php" />
+        <option value="$PROJECT_DIR$/admin/show_notice.php" />
+        <option value="$PROJECT_DIR$/admin/submit_news.php" />
+        <option value="$PROJECT_DIR$/admin/submit_notice.php" />
+        <option value="$PROJECT_DIR$/admin/dashboard.php" />
+        <option value="$PROJECT_DIR$/admin/gymupdate.php" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/admin/newsadmin.php" />
+        <option value="$PROJECT_DIR$/admin/submit_football.php" />
+        <option value="$PROJECT_DIR$/admin/swimupdate.php" />
+        <option value="$PROJECT_DIR$/admin/tableadmin.php" />
+        <option value="$PROJECT_DIR$/admin/user_information.php" />
+        <option value="$PROJECT_DIR$/admin/user_informationgym.php" />
       </list>
     </option>
   </component>
@@ -252,6 +342,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,19 +366,22 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="adminPanel" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\dusports\admin" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -401,20 +496,21 @@
       <workItem from="1494002208221" duration="210000" />
       <workItem from="1494004121165" duration="123000" />
       <workItem from="1494004376355" duration="18767000" />
+      <workItem from="1494047630653" duration="19141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42207000" />
+    <option name="totallyTimeSpent" value="61348000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2586" height="1386" extended-state="6" />
+    <frame x="-13" y="-13" width="2586" height="1386" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15429688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22734375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -426,6 +522,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -459,33 +556,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LoginCheckgym.php" />
-    <entry file="file://$PROJECT_DIR$/Logout.php" />
-    <entry file="file://$PROJECT_DIR$/schedulegym.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scheduleswim.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="47" column="48" lean-forward="false" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/updatepassword.php" />
-    <entry file="file://$PROJECT_DIR$/.htaccess" />
-    <entry file="file://$PROJECT_DIR$/about-us.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="51" column="47" lean-forward="false" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Assignment-2/test1.php">
+    <entry file="file://$PROJECT_DIR$/adminPanel/notificationadmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -493,78 +564,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/termswim.php">
+    <entry file="file://$PROJECT_DIR$/adminPanel/newsadmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="47" column="49" lean-forward="false" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        <state relative-caret-position="5676">
+          <caret line="172" column="31" lean-forward="false" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/termgym.php">
+    <entry file="file://$PROJECT_DIR$/adminPanel/livedash.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminPanel/live.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminPanel/gymupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminPanel/get_football.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminPanel/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="150" column="49" lean-forward="false" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swim.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="47" column="49" lean-forward="false" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/signLog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2541">
-          <caret line="77" column="47" lean-forward="false" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admissionswimMain.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="138" column="81" lean-forward="false" selection-start-line="138" selection-start-column="78" selection-end-line="138" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admissionswim.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <marker date="1494010308961" expanded="true" signature="715:814" ph="..." />
-            <marker date="1494010308961" expanded="true" signature="1868:2285" ph="INSERT INTO hello... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="24" />
-          <folding>
-            <marker date="1494004829631" expanded="true" signature="3873:3891" ph="select * fro... news" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
+        <state relative-caret-position="-453">
           <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
           <folding>
             <marker date="1494004201770" expanded="true" signature="3828:3848" ph="select * fro... notice" />
@@ -572,130 +630,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/scheduleswim.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494014112941" expanded="true" signature="4856:4894" ph="select * fro... admin_gym" />
-            <marker date="1494014112941" expanded="true" signature="5049:5156" ph="..." />
-            <marker date="1494014112941" expanded="true" signature="5886:5925" ph="select * fro... admin_swim" />
-            <marker date="1494014112941" expanded="true" signature="6056:6298" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/tableadmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5647">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494014120287" expanded="true" signature="4751:4790" ph="select * fro... admin_gym" />
-            <marker date="1494014120287" expanded="true" signature="5581:5621" ph="select * fro... admin_swim" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/confirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="141" column="79" lean-forward="false" selection-start-line="141" selection-start-column="64" selection-end-line="141" selection-end-column="79" />
+        <state relative-caret-position="-1616">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="1032">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1493979493253" expanded="true" signature="5944:5968" ph="SELECT * FRO... goal_giver" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2834">
-          <caret line="292" column="29" lean-forward="true" selection-start-line="292" selection-start-column="29" selection-end-line="292" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gym.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding>
-            <marker date="1494009612240" expanded="true" signature="466:564" ph="SELECT email... users" />
-            <marker date="1494009612240" expanded="true" signature="693:781" ph="UPDATE users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoginCheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1493910394830" expanded="true" signature="599:701" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LogIn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <marker date="1494009622180" expanded="true" signature="278:339" ph="SELECT * FRO... users" />
-            <marker date="1494009622180" expanded="true" signature="677:806" ph="..." />
-            <marker date="1494009622180" expanded="true" signature="838:962" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admissiongym.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1154">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-758">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding>
-            <marker date="1493909448473" expanded="true" signature="1973:2645" ph="INSERT INTO gym... " />
+            <marker date="1494060309465" expanded="true" signature="1973:2645" ph="INSERT INTO gym... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admissiongymCheck.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1188">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="561">
+          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
-            <marker date="1493909811961" expanded="true" signature="406:564" ph="..." />
-            <marker date="1493909811961" expanded="true" signature="594:679" ph="..." />
+            <marker date="1494060327812" expanded="true" signature="406:564" ph="..." />
+            <marker date="1494060327812" expanded="true" signature="594:679" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admissiongymMain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11846">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admissionswim.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <marker date="1494060343241" expanded="true" signature="715:814" ph="..." />
+            <marker date="1494060343241" expanded="true" signature="1868:2285" ph="INSERT INTO hello... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admissionswimCheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="42" column="15" lean-forward="false" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding>
+            <marker date="1494060373153" expanded="true" signature="406:565" ph="..." />
+            <marker date="1494060373153" expanded="true" signature="594:680" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admissionswimMain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4455">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/confirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1494060373183" expanded="true" signature="4242:4282" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/confirmswimdatabase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <marker date="1494060392711" expanded="true" signature="1012:1126" ph="INSERT INTO admin_swim... " />
+            <marker date="1494060392711" expanded="true" signature="1151:1298" ph="..." />
+            <marker date="1494060392711" expanded="true" signature="1334:1411" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3762">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <marker date="1494054401231" expanded="true" signature="8601:8625" ph="SELECT * FRO... goal_giver" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoginCheckgym.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <marker date="1494059249357" expanded="true" signature="300:378" ph="..." />
+            <marker date="1494059249357" expanded="true" signature="711:809" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoginCheckswi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <marker date="1494059277982" expanded="true" signature="303:381" ph="..." />
+            <marker date="1494059277982" expanded="true" signature="716:814" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3795">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <marker date="1494053685629" expanded="true" signature="3638:3656" ph="select * fro... news" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SignUp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="72" />
+        <state relative-caret-position="396">
+          <caret line="18" column="64" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="64" />
           <folding>
             <marker date="1494009633313" expanded="true" signature="839:879" ph="SELECT * FRO... users" />
             <marker date="1494009633313" expanded="true" signature="986:1097" ph="INSERT INTO users... " />
@@ -705,242 +782,294 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/confirmgymdatabase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <marker date="1494015889730" expanded="true" signature="1012:1125" ph="INSERT INTO admin_gym... " />
-            <marker date="1494015889730" expanded="true" signature="1150:1296" ph="..." />
-            <marker date="1494015889730" expanded="true" signature="1332:1408" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/confirmswimdatabase.php">
+    <entry file="file://$PROJECT_DIR$/admin/signLogAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1493974712613" expanded="true" signature="1012:1126" ph="INSERT INTO admin_swim... " />
-            <marker date="1493974712613" expanded="true" signature="1151:1298" ph="..." />
-            <marker date="1493974712613" expanded="true" signature="1334:1411" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_football.php">
+    <entry file="file://$PROJECT_DIR$/admin/SignLogAdminCheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/confirmgym.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
-          <caret line="3" column="68" lean-forward="false" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+          <caret line="3" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
           <folding>
-            <marker date="1494022918971" expanded="true" signature="167:201" ph="SELECT * fro... football" />
-            <marker date="1494022918971" expanded="true" signature="340:366" ph="SELECT * FRO... goal_giver" />
+            <marker date="1494064754168" expanded="true" signature="4224:4264" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/user_informationgym.php">
+    <entry file="file://$PROJECT_DIR$/confirmgymdatabase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3729">
-          <caret line="113" column="80" lean-forward="false" selection-start-line="113" selection-start-column="80" selection-end-line="113" selection-end-column="80" />
+        <state relative-caret-position="330">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
-            <marker date="1494022919003" expanded="true" signature="4072:4110" ph="SELECT * FRO... hello" />
-            <marker date="1494022919003" expanded="true" signature="6482:6515" ph="..." />
-            <marker date="1494022919003" expanded="true" signature="6519:6799" ph="..." />
-            <marker date="1494022919003" expanded="true" signature="6575:6617" ph="..." />
-            <marker date="1494022919003" expanded="true" signature="6575:6761" ph="..." />
-            <marker date="1494022919003" expanded="false" signature="6619:6642" ph="data:" />
-            <marker date="1494022919003" expanded="true" signature="6867:6898" ph="..." />
-            <marker date="1494022919003" expanded="true" signature="6902:7151" ph="..." />
-            <marker date="1494022919003" expanded="true" signature="6988:7146" ph="..." />
-            <marker date="1494022919003" expanded="false" signature="7000:7023" ph="data:" />
-            <marker date="1494022919003" expanded="true" signature="7186:7230" ph="SELECT * FRO... admin_swim" />
-            <marker date="1494022919003" expanded="true" signature="7415:7447" ph="..." />
-            <marker date="1494022919003" expanded="true" signature="7451:7683" ph="..." />
-            <marker date="1494022919003" expanded="true" signature="7525:7678" ph="..." />
-            <marker date="1494022919003" expanded="true" signature="7537:7560" ph="data:" />
+            <marker date="1494064742491" expanded="true" signature="1012:1125" ph="INSERT INTO admin_gym... " />
+            <marker date="1494064742491" expanded="true" signature="1150:1296" ph="..." />
+            <marker date="1494064742491" expanded="true" signature="1332:1408" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/user_information.php">
+    <entry file="file://$PROJECT_DIR$/signLog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="115" column="91" lean-forward="false" selection-start-line="115" selection-start-column="91" selection-end-line="115" selection-end-column="91" />
+        <state relative-caret-position="3144">
+          <caret line="219" column="35" lean-forward="true" selection-start-line="219" selection-start-column="35" selection-end-line="219" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/tableadmin.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="132" column="37" lean-forward="false" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
+        <state relative-caret-position="1122">
+          <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="61" />
           <folding>
-            <marker date="1494023081855" expanded="true" signature="4842:4881" ph="select * fro... admin_gym" />
-            <marker date="1494023081855" expanded="true" signature="5760:5800" ph="select * fro... admin_swim" />
+            <marker date="1494009612240" expanded="true" signature="466:564" ph="SELECT email... users" />
+            <marker date="1494009612240" expanded="true" signature="693:781" ph="UPDATE users... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/swimupdate.php">
+    <entry file="file://$PROJECT_DIR$/updatepassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <marker date="1493916726371" expanded="true" signature="593:645" ph="SELECT email... users" />
+            <marker date="1493916726371" expanded="true" signature="1355:1436" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <marker date="1493910394849" expanded="true" signature="270:358" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogIn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <marker date="1494060411344" expanded="true" signature="278:339" ph="SELECT * FRO... users" />
+            <marker date="1494060411344" expanded="true" signature="677:806" ph="..." />
+            <marker date="1494060411344" expanded="true" signature="838:962" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1616">
+          <caret line="182" column="24" lean-forward="false" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
+          <folding>
+            <marker date="1494069337638" expanded="true" signature="6207:6245" ph="select * fro... admin_gym" />
+            <marker date="1494069337638" expanded="true" signature="6527:6939" ph="..." />
+            <marker date="1494069337638" expanded="true" signature="6718:6934" ph="..." />
+            <marker date="1494069337638" expanded="true" signature="6794:6900" ph="..." />
+            <marker date="1494069337638" expanded="true" signature="7752:7791" ph="select * fro... admin_swim" />
+            <marker date="1494069337638" expanded="true" signature="8119:8436" ph="..." />
+            <marker date="1494069337638" expanded="true" signature="8261:8431" ph="..." />
+            <marker date="1494069337638" expanded="true" signature="8315:8405" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="8" column="72" lean-forward="false" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding>
-            <marker date="1494023013289" expanded="true" signature="316:388" ph="UPDATE admin... " />
-            <marker date="1494023013289" expanded="true" signature="424:464" ph="SELECT * FRO... users" />
+            <marker date="1494069493968" expanded="true" signature="445:510" ph="SELECT * FRO... admin" />
+            <marker date="1494069493968" expanded="true" signature="750:874" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/submit_notice.php">
+    <entry file="file://$PROJECT_DIR$/admin/livedash.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="22" column="72" lean-forward="false" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
-          <folding>
-            <marker date="1494023051577" expanded="true" signature="395:460" ph="INSERT INTO notice... " />
-            <marker date="1494023051577" expanded="true" signature="962:998" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/submit_news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="72" lean-forward="false" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
-          <folding>
-            <marker date="1494023106681" expanded="true" signature="391:450" ph="INSERT INTO news... " />
-            <marker date="1494023106681" expanded="true" signature="940:972" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/submit_football.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="27" column="72" lean-forward="false" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
-          <folding>
-            <marker date="1494023132604" expanded="true" signature="501:646" ph="INSERT INTO football... " />
-            <marker date="1494023132604" expanded="true" signature="1213:1323" ph="UPDATE footb... " />
-            <marker date="1494023132604" expanded="true" signature="1776:1880" ph="Insert into goal_giver... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/SignLogAdminCheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <marker date="1494023172478" expanded="true" signature="405:470" ph="SELECT * FRO... admin" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/signLogAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2144">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-1649">
+          <caret line="139" column="41" lean-forward="false" selection-start-line="139" selection-start-column="41" selection-end-line="139" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/show_notice.php">
+    <entry file="file://$PROJECT_DIR$/admin/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="231">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <marker date="1494065814678" expanded="true" signature="55:136" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/newsadmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6237">
+          <caret line="189" column="22" lean-forward="false" selection-start-line="189" selection-start-column="22" selection-end-line="189" selection-end-column="22" />
+          <folding>
+            <marker date="1494069493998" expanded="true" signature="7252:7270" ph="select * fro... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/notificationadmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6599">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <marker date="1494066999686" expanded="true" signature="7377:7397" ph="select * fro... notice" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/show_news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <marker date="1494049878267" expanded="true" signature="480:498" ph="select * fro... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/show_notice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <marker date="1494023270139" expanded="true" signature="482:502" ph="select * fro... notice" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/show_news.php">
+    <entry file="file://$PROJECT_DIR$/admin/submit_football.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="397">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <marker date="1494023274144" expanded="true" signature="478:496" ph="select * fro... news" />
+            <marker date="1494069494068" expanded="true" signature="501:646" ph="INSERT INTO football... " />
+            <marker date="1494069494068" expanded="true" signature="1252:1362" ph="UPDATE footb... " />
+            <marker date="1494069494068" expanded="true" signature="1725:1829" ph="Insert into goal_giver... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/notificationadmin.php">
+    <entry file="file://$PROJECT_DIR$/admin/submit_news.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6208">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="933">
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
-            <marker date="1494016600281" expanded="true" signature="5989:6009" ph="select * fro... notice" />
+            <marker date="1494067177283" expanded="true" signature="391:450" ph="INSERT INTO news... " />
+            <marker date="1494067177283" expanded="true" signature="971:1003" ph="delete from " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/newsadmin.php">
+    <entry file="file://$PROJECT_DIR$/admin/submit_notice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-565">
-          <caret line="172" column="31" lean-forward="false" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
+        <state relative-caret-position="933">
+          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding>
-            <marker date="1494023370009" expanded="true" signature="6061:6079" ph="select * fro... news" />
+            <marker date="1494067205577" expanded="true" signature="395:460" ph="INSERT INTO notice... " />
+            <marker date="1494067205577" expanded="true" signature="995:1031" ph="delete from " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/livedash.php">
+    <entry file="file://$PROJECT_DIR$/admin/gymupdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5642">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="297">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <marker date="1494069351350" expanded="true" signature="384:455" ph="UPDATE admin... " />
+            <marker date="1494069351350" expanded="true" signature="491:531" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/swimupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <marker date="1494069494036" expanded="true" signature="383:455" ph="UPDATE admin... " />
+            <marker date="1494069494036" expanded="true" signature="491:531" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tableadmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="143" column="22" lean-forward="false" selection-start-line="143" selection-start-column="22" selection-end-line="143" selection-end-column="22" />
+          <folding>
+            <marker date="1494069572395" expanded="true" signature="5628:5667" ph="select * fro... admin_gym" />
+            <marker date="1494069572395" expanded="true" signature="5863:5903" ph="SELECT * FRO... users" />
+            <marker date="1494069572395" expanded="true" signature="6990:7030" ph="select * fro... admin_swim" />
+            <marker date="1494069572395" expanded="true" signature="7225:7265" ph="select * fro... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/user_information.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2626">
+          <caret line="113" column="23" lean-forward="false" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/live.php">
+    <entry file="file://$PROJECT_DIR$/admin/user_informationgym.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6868">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="3696">
+          <caret line="112" column="14" lean-forward="false" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="14" />
           <folding>
-            <marker date="1493979493253" expanded="true" signature="5944:5968" ph="SELECT * FRO... goal_giver" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/gymupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-          <folding>
-            <marker date="1494022750385" expanded="true" signature="317:324" ph="UPDATE admin... " />
-            <marker date="1494022750385" expanded="true" signature="317:388" ph="UPDATE users... " />
-            <marker date="1494022750385" expanded="true" signature="424:464" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/get_football.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding>
-            <marker date="1494022750354" expanded="true" signature="171:205" ph="SELECT * fro... football" />
-            <marker date="1494022750354" expanded="true" signature="344:370" ph="SELECT * FRO... goal_giver" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminPanel/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2479">
-          <caret line="150" column="49" lean-forward="true" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="49" />
-          <folding>
-            <marker date="1494022841784" expanded="true" signature="4999:5037" ph="select * fro... admin_gym" />
-            <marker date="1494022841784" expanded="true" signature="5315:5686" ph="..." />
-            <marker date="1494022841784" expanded="true" signature="5466:5681" ph="..." />
-            <marker date="1494022841784" expanded="true" signature="5527:5633" ph="..." />
-            <marker date="1494022841784" expanded="true" signature="6359:6383" ph="select * fro... admin_swim" />
-            <marker date="1494022841784" expanded="true" signature="6359:6398" ph="select * fro... admin_swim" />
-            <marker date="1494022841784" expanded="true" signature="6686:6991" ph="..." />
-            <marker date="1494022841784" expanded="true" signature="6816:6986" ph="..." />
-            <marker date="1494022841784" expanded="true" signature="6870:6960" ph="..." />
+            <marker date="1494069572454" expanded="true" signature="4042:4080" ph="SELECT * FRO... gym" />
+            <marker date="1494069572454" expanded="true" signature="6452:6485" ph="..." />
+            <marker date="1494069572454" expanded="true" signature="6489:6769" ph="..." />
+            <marker date="1494069572454" expanded="true" signature="6545:6731" ph="..." />
+            <marker date="1494069572454" expanded="false" signature="6589:6612" ph="data:" />
+            <marker date="1494069572454" expanded="true" signature="6837:6868" ph="..." />
+            <marker date="1494069572454" expanded="true" signature="6872:7121" ph="..." />
+            <marker date="1494069572454" expanded="true" signature="6958:7116" ph="..." />
+            <marker date="1494069572454" expanded="false" signature="6970:6993" ph="data:" />
+            <marker date="1494069572454" expanded="true" signature="7156:7200" ph="SELECT * FRO... admin_gym" />
+            <marker date="1494069572454" expanded="true" signature="7385:7417" ph="..." />
+            <marker date="1494069572454" expanded="true" signature="7421:7653" ph="..." />
+            <marker date="1494069572454" expanded="true" signature="7495:7648" ph="..." />
+            <marker date="1494069572454" expanded="false" signature="7507:7530" ph="data:" />
           </folding>
         </state>
       </provider>
