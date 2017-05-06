@@ -19,7 +19,7 @@
 		//echo "<script type='text/javascript'>alert('Please select an image');</script>";
 		echo "<script>
 			alert('Please select an image.');
-			window.location.href='admissionswimMain.php';
+			window.location.href='admissionswim';
 			</script>";
 		
 	}

@@ -11,6 +11,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 else {
   // echo "<script type='text/javascript'>alert('At first you have to register/login');</script>";
 	//include("signLog.html");
-	header('location:dusports');
+	header('location:.');
 }
 ?>

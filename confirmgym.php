@@ -81,11 +81,11 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="dusports"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand" href="."><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="dusports">HOME</a></li>
+                        <li><a href=".">HOME</a></li>
                         <li><a href="admissiongym">GYMNASIUM</a></li>
                         <li class="active"><a href="admissiongym">ADMISSION</a></li>
 

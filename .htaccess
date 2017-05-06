@@ -1,5 +1,4 @@
 RewriteEngine On
-RewriteRule ^dusports?$ index.php
 RewriteRule ^gym?$ gym.php
 RewriteRule ^swim?$ swim.php
 RewriteRule ^about-us?$ about-us.php

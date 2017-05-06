@@ -13,11 +13,11 @@
         mysqli_query($conn,"UPDATE users SET active='1' WHERE email='".$email."' AND hash='".$hash."' AND active='0'") or die(mysql_error());
         echo "<script type='text/javascript'>alert('Your account has been activated, you can now login.');</script>";
 		//include("signLog.html");
-		header('location:signLog.php');
+		header('location:signLog');
 		}else{
 			 echo "<script type='text/javascript'>alert('The url is either invalid or you already have activated your account.');</script>";
 			//include("signLog.html");
-			header('location:signLog.php');
+			header('location:signLog');
 		}
 	}
              

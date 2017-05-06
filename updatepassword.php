@@ -23,7 +23,7 @@
                // $conn = new mysqli('localhost', 'root', '', 'WebProject');
                 $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
                 $res=mysqli_query($conn, "UPDATE users password ='" . $hash . "' WHERE email='" . $Email . "'");
-                header('location:dusports');
+                header('location:.');
 
             } else {
                 echo "<script>

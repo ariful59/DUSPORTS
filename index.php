@@ -41,11 +41,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="dusports"><img src="img/logo.png"></a>
+                <a class="navbar-brand" href="."><img src="img/logo.png"></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="dusports">HOME</a></li>
+                    <li class="active"><a href=".">HOME</a></li>
 					<li><a href="gym">GYMNASIUM</a></li>
                     <li><a href="swim">SWIMMING</a></li>
                     <li class="dropdown">
@@ -197,7 +197,8 @@
 	        			<div class="service-wrapper">
 		        			<i class="icon-home" style="font-size: 7.00em;"></i>
 		        			<h3>Dhaka University Sports Club</h3>
-		        			<p>There are a lot of renowned sports club in dhaka university.
+		        			<p>There are a lot of renowned sports club in dhaka university. Sports club often organized games like football, cricket, tennis etc.
+                                Sports club palys an important roll in dhaka university sports.
 							
 							.
 							</p>

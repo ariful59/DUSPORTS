@@ -33,18 +33,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="dusports"><img src="img/logo.png" alt=""></a>
+                <a class="navbar-brand" href="."><img src="img/logo.png" alt=""></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="dusports">HOME</a></li>
+                    <li><a href=".">HOME</a></li>
 					<li><a href="gym">GYMNESIUM</a></li>
                     <li><a href="admissiongym">ADMISSION</a></li>
 					 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
-							<li  class="active"><a href="schedulegym">SCHEDULE</a></li>
-                            <li><a href="termgym">TERMS & POLICY</a></li>
+							<li  class="active"><a href="scheduleswim">SCHEDULE</a></li>
+                            <li><a href="termswim">TERMS & POLICY</a></li>
                             <li><a href="notice">NOTICE BOARD</a></li>
                         </ul>
                     </li>
