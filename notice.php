@@ -97,8 +97,8 @@
 
 <?php
 	//$con=mysqli_connect("localhost","root","","WebProject");
-$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
-$result = $con->query("select * from notice;");
+$conn = mysqli_connect('localhost', 'dusports', 'dusports', 'dusports');
+$result = $conn->query("select * from notice;");
 
 	while($row = $result->fetch_assoc()){
 		echo "<div class=\"jumbotron text-center\">";
