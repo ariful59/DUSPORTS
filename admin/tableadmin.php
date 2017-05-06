@@ -172,8 +172,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </thead>
                     <tbody>
                     <?php
-                    $conn = mysqli_connect("localhost", "root", "", "WebProject");
-                    //$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+                   // $conn = mysqli_connect("localhost", "root", "", "WebProject");
+                    $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
                     $sql = "select * from admin_swim  where active=1;";
                     $result = $conn->query($sql);
                     while ($row = $result->fetch_assoc()) {

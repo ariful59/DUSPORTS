@@ -70,18 +70,27 @@
 						$Email=$_SESSION['email'];
 						$_SESSION['email'] = $Email;
 						//echo $Email;
-						
-						?>
-						<li class="dropdown">
-							<a href="signLog" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Profile</a></li>
-								<li><a href="logout">Logout</a></li>
-							</ul>
-						</li>
-				
-					<?php 
-					} 
+						if(!(empty($Email))) {
+                            ?>
+                            <li class="dropdown">
+                                <a href="signLog" class="dropdown-toggle" data-toggle="dropdown">
+                                    <px><?php echo $username ?></px>
+                                    <i class="icon-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="logout">Logout</a></li>
+                                </ul>
+                            </li>
+
+                            <?php
+                        }else{
+                            $username="REGISTER";?>
+                            <li ><a href="signLog"><?php echo $username ?></a></li>
+                            <?php
+
+                        }
+
+					}
 					 else{
 						$username="REGISTER"; ?>
 					<li ><a href="signLog"><?php echo $username ?></a></li>				

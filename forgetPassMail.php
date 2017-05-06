@@ -1,8 +1,8 @@
 <?php
 if(isset($_POST['send'])){
 	$Email=$_POST["email"];
-	$conn = new mysqli('localhost', 'root', '', 'WebProject');
-	//$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+	//$conn = new mysqli('localhost', 'root', '', 'WebProject');
+	$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
     if($conn->connect_errno){
         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 	}
