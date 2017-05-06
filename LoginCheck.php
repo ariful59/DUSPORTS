@@ -14,7 +14,7 @@ else {
 	//echo "<script type='text/javascript'>alert('At first you have to register/login');</script>";
 	echo "<script>
 			alert('At first you have to register/login.');
-			window.location.href='signLog.php';
+			window.location.href='signLog';
 			</script>";
 }
 ?>

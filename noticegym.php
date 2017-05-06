@@ -96,7 +96,8 @@
 </div>
 
 <?php
-$con=mysqli_connect("localhost","root","","WebProject");
+//$con=mysqli_connect("localhost","root","","WebProject");
+$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
 
 $result = $con->query("select * from notice;");
 

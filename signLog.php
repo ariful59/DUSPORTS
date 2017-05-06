@@ -72,7 +72,7 @@
 					<li><a href="gym">GYMNASIUM</a></li>
                     <li><a href="swim">SWIMMING</a></li>
                     <li class="dropdown">
-                        <a href="about-us" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="news">News</a></li>
                             <li><a href ="live" target="_blank">Live</a></li>

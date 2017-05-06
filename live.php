@@ -173,8 +173,8 @@
         goal.innerHTML="";
         var jsStringFromPhp;
         jsStringFromPhp=<?php
-
-        $conn = new mysqli('localhost', 'root', '', 'WebProject');
+        $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+        //$conn = new mysqli('localhost', 'root', '', 'WebProject');
         $sql="SELECT * FROM goal_giver";
         $result= $conn->query($sql);
 
