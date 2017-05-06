@@ -118,7 +118,7 @@
                             <div class="col-md-12">
                                 <div class="carousel-content centered">
                                     <h2 class="animation animated-item-1">Welcome to University of Dhaka Sports</h2>
-                                    <p class="animation animated-item-2">You can get admission in swimming pool, gymnasium and also know latest update of Dhaka University Sports</p>
+                                    <p class="animation animated-item-2">You can get admission in swimming pool, gymnasium and also know about the latest update of Dhaka University Sports</p>
                                 </div>
                             </div>
                         </div>
