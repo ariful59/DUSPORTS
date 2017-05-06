@@ -40,36 +40,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="."><img src="img/logo.png"></a>
+            <a class="navbar-brand" href="."><img src="img/logo.png" alt=""></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li ><a href=".">HOME</a></li>
-                <li><a href="gym">GYMNASIUM</a></li>
+                <li><a href=".">HOME</a></li>
                 <li><a href="swim">SWIMMING</a></li>
-                <li class="dropdown">
-                    <a href="" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
+                <li><a href="admissionswim">ADMISSION</a></li>
+                <li class="active" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="news">News</a></li>
-                        <li><a href="live">Live</a></li>
+                        <li ><a href="schedulegym">SCHEDULE</a></li>
+                        <li><a href="termswim">TERMS & POLICY</a></li>
+                        <li class="active"><a href="notice">NOTICE BOARD</a></li>
                     </ul>
                 </li>
                 <li><a href="about-us">ABOUT US</a></li>
                 <li><a href="contact-us">CONTACT</a></li>
-
                 <?php
-                if(!isset($_SESSION))
-                {
-                    session_start();
-                }
+                session_start();
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     $username=$_SESSION['username'];
                     $_SESSION['loggedin'] = true;
                     $_SESSION['username'] = $username;
-                    $Email=$_SESSION['email'];
-                    $_SESSION['email'] = $Email;
-                    //echo $Email;
-
                     ?>
                     <li class="dropdown">
                         <a href="signLog" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
@@ -88,8 +81,6 @@
                     <?php
                 }
                 ?>
-
-
             </ul>
         </div>
     </div>
