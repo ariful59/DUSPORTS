@@ -41,11 +41,11 @@
 					<li><a href="gym">GYMNESIUM</a></li>
                     <li><a href="admissiongym">ADMISSION</a></li>
 					 <li class="active" class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
 							<li><a href="schedulegym">SCHEDULE</a></li>
                             <li  class="active"><a href="termgym">TERMS & POLICY</a></li>
-                            <li><a href="notice">NOTICE BOARD</a></li>
+                            <li><a href="noticegym">NOTICE BOARD</a></li>
                         </ul>
                     </li>
                     <li><a href="about-us">ABOUT US</a></li> 
@@ -94,7 +94,7 @@
 		</div>
 		
 		<div class="schedule">
-		   <img src="pdf.png" alt="Schedue" style="width:100%;height:80%;" class="imageSchedule">
+		   <img src="termgym.jpg" alt="Schedue" style="width:100%;height:80%;" class="imageSchedule">
 		  </div>
 		
 

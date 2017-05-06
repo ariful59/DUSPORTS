@@ -63,15 +63,15 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href=".">HOME</a></li>
-					<li><a href="admissiongym">GYMAESIUM</a></li>
+					<li><a href="gym">GYMAESIUM</a></li>
                     <li class="active"><a href="admissiongym">ADMISSION</a></li>
                     
 					<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
 							<li><a href="schedulegym">SCHEDULE</a></li>
                             <li><a href="termgym">TERMS & POLICY</a></li>
-                            <li><a href="notice">NOTICE BOARD</a></li>
+                            <li><a href="noticegym">NOTICE BOARD</a></li>
                         </ul>
                     </li>
                     <li><a href="about-us">ABOUT US</a></li> 

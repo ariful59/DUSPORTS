@@ -48,9 +48,9 @@
                 <li><a href="swim">SWIMMING</a></li>
                 <li><a href="admissionswim">ADMISSION</a></li>
                 <li class="active" class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li ><a href="schedulegym">SCHEDULE</a></li>
+                        <li ><a href="scheduleswim">SCHEDULE</a></li>
                         <li><a href="termswim">TERMS & POLICY</a></li>
                         <li class="active"><a href="notice">NOTICE BOARD</a></li>
                     </ul>

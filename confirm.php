@@ -87,11 +87,11 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href=".">HOME</a></li>
-                        <li><a href="admissionswimMain.php">SWIMMING</a></li>
+                        <li><a href="swim">SWIMMING</a></li>
                         <li class="active"><a href="admissionswim">ADMISSION</a></li>
 
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i
                                         class="icon-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="scheduleswim">SCHEDULE</a></li>

@@ -3,7 +3,13 @@
 
 <head>
 
-    <title>Current News</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NotieBoard</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -22,7 +28,6 @@
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 
-
 </head>
 
 <body>
@@ -35,42 +40,35 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="."><img src="img/logo.png"></a>
+            <a class="navbar-brand" href="."><img src="img/logo.png" alt=""></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href=".">HOME</a></li>
-                <li><a href="gym">GYMNASIUM</a></li>
-                <li><a href="swim">SWIMMING</a></li>
+                <li><a href="gym"> GYMNASIUM</a></li>
+                <li><a href="admissiongym">ADMISSION</a></li>
                 <li class="active" class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">NOTICE<i class="icon-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li class="active"><a href="news">NEWS</a></li>
-                        <li><a href ="live" target="_blank">LIVE</a></li>
+                        <li ><a href="schedulegym">SCHEDULE</a></li>
+                        <li><a href="termgym">TERMS & POLICY</a></li>
+                        <li class="active"><a href="noticegym">NOTICE BOARD</a></li>
                     </ul>
                 </li>
                 <li><a href="about-us">ABOUT US</a></li>
                 <li><a href="contact-us">CONTACT</a></li>
-
                 <?php
-                if(!isset($_SESSION))
-                {
-                    session_start();
-                }
+                session_start();
                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     $username=$_SESSION['username'];
                     $_SESSION['loggedin'] = true;
                     $_SESSION['username'] = $username;
-                    $Email=$_SESSION['email'];
-                    $_SESSION['email'] = $Email;
-                    //echo $Email;
-
                     ?>
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
+                        <a href="signLog" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">PROFILE</a></li>
-                            <li><a href="logout">LOGOUT</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="logout">Logout</a></li>
                         </ul>
                     </li>
 
@@ -83,13 +81,10 @@
                     <?php
                 }
                 ?>
-
-
             </ul>
         </div>
     </div>
 </header>
-<!-- Page Title -->
 <div class="section section-breadcrumbs">
     <div class="container">
         <div class="row">
@@ -101,17 +96,15 @@
 </div>
 
 <?php
-	//$con=mysqli_connect("localhost","root","","WebProject");
-    $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+$con=mysqli_connect("localhost","root","","WebProject");
 
-$result = $con->query("select * from news;");
+$result = $con->query("select * from notice;");
 
-	while($row = $result->fetch_assoc()){
-		echo "<div class=\"jumbotron text-center\">";
-		echo "<p>".$row['Date']."<br> ".$row['News']."<br></p>";
-		echo "</div>";
-	}
-
+while($row = $result->fetch_assoc()){
+    echo "<div class=\"jumbotron text-center\">";
+    echo "<p>".$row['Date']."<br> ".$row['Notice']."<br></p>";
+    echo "</div>";
+}
 ?>
 
 <div class="footer">

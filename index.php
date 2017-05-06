@@ -51,8 +51,8 @@
                     <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="news">News</a></li>
-                            <li><a href="live">Live</a></li>
+                            <li><a href="news">NEWS</a></li>
+                            <li><a href ="live" target="_blank">LIVE</a></li>
                         </ul>
                     </li>
                     <li><a href="about-us">ABOUT US</a></li> 
@@ -77,8 +77,8 @@
                                     <px><?php echo $username ?></px>
                                     <i class="icon-angle-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Profile</a></li>
-                                    <li><a href="logout">Logout</a></li>
+                                    <li><a href="#">PROFILE</a></li>
+                                    <li><a href="logout">LOGOUT</a></li>
                                 </ul>
                             </li>
 

@@ -16,94 +16,24 @@
     <link rel="stylesheet" href="css/icomoon-social.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/lavenderTheme.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-
-
     <style>
         .change {
             margin-left: 30%;
             width: 100%;
         }
-        </style>
+    </style>
 
 </head>
 
 <body>
 
-<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="."><img src="img/logo.png"></a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href=".">HOME</a></li>
-                <li><a href="gym">GYMNASIUM</a></li>
-                <li><a href="swim">SWIMMING</a></li>
-                <li class="active" class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li "><a href="news">News</a></li>
-                        <li class="active"><a href="live">Live</a></li>
-                    </ul>
-                </li>
-                <li><a href="about-us">ABOUT US</a></li>
-                <li><a href="contact-us">CONTACT</a></li>
 
-                <?php
-                if(!isset($_SESSION))
-                {
-                    session_start();
-                }
-                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                    $username=$_SESSION['username'];
-                    $_SESSION['loggedin'] = true;
-                    $_SESSION['username'] = $username;
-                    $Email=$_SESSION['email'];
-                    $_SESSION['email'] = $Email;
-                    //echo $Email;
-
-                    ?>
-                    <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown"><px><?php echo $username ?></px><i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="logout">Logout</a></li>
-                        </ul>
-                    </li>
-
-                    <?php
-                }
-                else{
-                    $username="REGISTER"; ?>
-                    <li ><a href="signLog"><?php echo $username ?></a></li>
-
-                    <?php
-                }
-                ?>
-
-
-            </ul>
-        </div>
-    </div>
-</header>
-
-
-
-<section id="main-slider" class="no-margin">
 <div class="rca-container">
     <div class="change">
         <!--Logo Holder-->
@@ -118,152 +48,151 @@
         </div>
 
 
-    <div class="rca-column-4">
-        <!--Match Series-->
-        <div class="rca-mini-widget rca-top-border rca-tab-simple">
-            <ul class="rca-tab-list">
-                <li class="rca-tab-link active" data-tab="ltab-1" onclick="showTab(this);">Live</li>
-                <li class="rca-tab-link" data-tab="ltab-2" onclick="showTab(this);">Results</li>
-                <li class="rca-tab-link" data-tab="ltab-3" onclick="showTab(this);">Upcoming</li>
-            </ul>
+        <div class="rca-column-4">
+            <!--Match Series-->
+            <div class="rca-mini-widget rca-top-border rca-tab-simple">
+                <ul class="rca-tab-list">
+                    <li class="rca-tab-link active" data-tab="ltab-1" onclick="showTab(this);">Live</li>
+                    <li class="rca-tab-link" data-tab="ltab-2" onclick="showTab(this);">Results</li>
+                    <li class="rca-tab-link" data-tab="ltab-3" onclick="showTab(this);">Upcoming</li>
+                </ul>
 
 
 
 
 
 
-            <div id="ltab-1" class="rca-padding rca-tab-content rca-multi-season active">
-                <table class="table table-striped">
-                    <p id="nolive"></p>
-					<thead>
-                    <tr>
-                        <th></th>
-                        <th id="team1_header"></th>
-                        <th id="score_header"></th>
-                        <th id="team2_header"></th>
+                <div id="ltab-1" class="rca-padding rca-tab-content rca-multi-season active">
+                    <table class="table table-striped">
+                        <p id="nolive"></p>
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th id="team1_header"></th>
+                            <th id="score_header"></th>
+                            <th id="team2_header"></th>
 
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td id="time"></td>
-                        <td id="team1"></td>
-                        <td id="score"></td>
-                        <td id="team2"></td>
-                    </tr>
-                    </tbody>
-					
-                </table>
-				
-				<p id="goal">
-						
-					</p>
-				
-            </div>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td id="time"></td>
+                            <td id="team1"></td>
+                            <td id="score"></td>
+                            <td id="team2"></td>
+                        </tr>
+                        </tbody>
 
+                    </table>
 
+                    <p id="goal">
 
+                    </p>
 
-            <div id="ltab-2" class="rca-padding rca-tab-content">
-                <div class="rca-match-detail rca-padding">
-                    <h3 class="rca-match-title">
-                        <a>BAN vs ZIM</a>
-                    </h3>
-                    <p class="rca-duration">Bangaladesh Won by 20 runs</p>
-                    <p class="rca-match-schedule">Sun, 31 Jan 2:10 pm IST</p>
                 </div>
-            </div>
 
 
 
 
-
-            <div id="ltab-3" class="rca-padding rca-tab-content">
-                <div class="rca-match-detail rca-padding">
-                    <h3 class="rca-match-title">
-                        <a>BAN vs ZIM</a>
-                    </h3>
-                    <p class="rca-duration">Start in 21hrs</p>
-                    <p class="rca-match-schedule">Sun, 31 Jan 2:10 pm IST</p>
+                <div id="ltab-2" class="rca-padding rca-tab-content">
+                    <div class="rca-match-detail rca-padding">
+                        <h3 class="rca-match-title">
+                            <a>BAN vs ZIM</a>
+                        </h3>
+                        <p class="rca-duration">Bangaladesh Won by 20 runs</p>
+                        <p class="rca-match-schedule">Sun, 31 Jan 2:10 pm IST</p>
+                    </div>
                 </div>
-            </div>
 
+
+
+
+
+                <div id="ltab-3" class="rca-padding rca-tab-content">
+                    <div class="rca-match-detail rca-padding">
+                        <h3 class="rca-match-title">
+                            <a>BAN vs ZIM</a>
+                        </h3>
+                        <p class="rca-duration">Start in 21hrs</p>
+                        <p class="rca-match-schedule">Sun, 31 Jan 2:10 pm IST</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
-</div>
-
 
 <script>
-        function load() {
-            var team1=document.getElementById("team1");
-            var team2=document.getElementById("team2");
-            var score=document.getElementById("score");
-            var time=document.getElementById("time");
-			var team1_header=document.getElementById("team1_header");
-			var team2_header=document.getElementById("team2_header");
-			var score_header=document.getElementById("score_header");
-			var nolive=document.getElementById("nolive");
+    function load() {
+        var team1=document.getElementById("team1");
+        var team2=document.getElementById("team2");
+        var score=document.getElementById("score");
+        var time=document.getElementById("time");
+        var team1_header=document.getElementById("team1_header");
+        var team2_header=document.getElementById("team2_header");
+        var score_header=document.getElementById("score_header");
+        var nolive=document.getElementById("nolive");
 
 
-            var xhttp=new XMLHttpRequest();
-			
-            xhttp.onreadystatechange = function () {
-                if(this.readyState==4 && this.status == 200){
-                    
-					var jason=JSON.parse(this.responseText);
+        var xhttp=new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function () {
+            if(this.readyState==4 && this.status == 200){
+
+                var jason=JSON.parse(this.responseText);
+                console.log(jason);
+                if(jason!=null){
+                    team1_header.innerHTML="Team1";
+                    team2_header.innerHTML="Team2";
+                    score_header.innerHTML="Score";
+                    team1.innerHTML=jason['Team1'];
+                    team2.innerHTML=jason['Team2'];
+                    time.innerHTML=jason['Time']+"'";
+                    score.innerHTML=" "+jason['score_team1']+" - "+jason['score_team2']+" ";
+                    //goal.innerHTML=""+jason['time']+"  "+jason['team_name']+"   "+jason['goal_giver'];
+                    loadGoal();
+                    nolive.innerHTML="";
                     console.log(jason);
-					if(jason!=null){
-						team1_header.innerHTML="Team1";
-						team2_header.innerHTML="Team2";
-						score_header.innerHTML="Score";
-						team1.innerHTML=jason['Team1'];
-						team2.innerHTML=jason['Team2'];
-						time.innerHTML=jason['Time']+"'";
-						score.innerHTML=" "+jason['score_team1']+" - "+jason['score_team2']+" ";
-                        //goal.innerHTML=""+jason['time']+"  "+jason['team_name']+"   "+jason['goal_giver'];
-                        loadGoal();
-						nolive.innerHTML="";
-						console.log(jason);
-					}
-					else{
-						team1_header.innerHTML="";
-						team2_header.innerHTML="";
-						score_header.innerHTML="";
-						nolive.innerHTML="There is no Live match this moment";
-					}
+                }
+                else{
+                    team1_header.innerHTML="";
+                    team2_header.innerHTML="";
+                    score_header.innerHTML="";
+                    nolive.innerHTML="There is no Live match this moment";
                 }
             }
-            xhttp.open("POST","get_football.php",true);
-            xhttp.send();
         }
-        //load();
+        xhttp.open("POST","get_football.php",true);
+        xhttp.send();
+    }
+    //load();
 
-        function loadGoal(){
-            var goal=document.getElementById("goal");
-            goal.innerHTML="";
-            var jsStringFromPhp;
-            jsStringFromPhp=<?php
+    function loadGoal(){
+        var goal=document.getElementById("goal");
+        goal.innerHTML="";
+        var jsStringFromPhp;
+        jsStringFromPhp=<?php
 
-            $conn = new mysqli('localhost', 'root', '', 'WebProject');
-            $sql="SELECT * FROM goal_giver";
-            $result= $conn->query($sql);
+        $conn = new mysqli('localhost', 'root', '', 'WebProject');
+        $sql="SELECT * FROM goal_giver";
+        $result= $conn->query($sql);
 
-            $output="";
+        $output="";
 
-            while($row = $result->fetch_assoc()){
-                $output=$output."<br>".$row["Time"]."' ".$row["Team_name"]."  ".$row["Goal_giver"] ;
-            }
-            echo json_encode($output);
-
-            ?>;
-
-            goal.innerHTML=jsStringFromPhp;
+        while($row = $result->fetch_assoc()){
+            $output=$output."<br>".$row["Time"]."' ".$row["Team_name"]."  ".$row["Goal_giver"] ;
         }
-        setInterval(load,2000);
-        //setInterval(loadGoal,2000);
+        echo json_encode($output);
 
-    </script>
+        ?>;
+
+        goal.innerHTML=jsStringFromPhp;
+    }
+    setInterval(load,2000);
+    //setInterval(loadGoal,2000);
+
+</script>
 
 
 <script>
@@ -287,20 +216,19 @@
 </script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
-		
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/scrolling-nav.js"></script>
-		<script type="text/javascript">
-			$(function() {
-			
-				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
 
-			});
-		</script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script type="text/javascript">
+    $(function() {
 
-</section>
+        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+    });
+</script>
+
 </body>
 </html>
 

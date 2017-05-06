@@ -1,7 +1,7 @@
 <?php
 
-    //$conn = new mysqli('localhost', 'root', '', 'WebProject');
-$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+    $conn = new mysqli('localhost', 'root', '', 'WebProject');
+    //$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
     $result=$conn->query("SELECT * from football WHERE NO =1;");
     $row = mysqli_fetch_object($result);
 

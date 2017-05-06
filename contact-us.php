@@ -53,7 +53,7 @@
                         <a href="about-us" class="dropdown-toggle" data-toggle="dropdown">EVENT<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="news">News</a></li>
-                            <li><a href="live">Live</a></li>
+                            <li><a href ="live" target="_blank">Live</a></li>
                         </ul>
                     </li>
                     <li><a href="about-us">ABOUT US</a></li> 

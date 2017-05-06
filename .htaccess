@@ -28,6 +28,7 @@ RewriteRule	^confirmswimdata?$ confirmswimdatabase.php
 RewriteRule	^confirmgymdata?$  confirmgymdatabase.php
 RewriteRule ^live?$ live.php
 RewriteRule ^notice?$ notice.php
+RewriteRule ^noticegym?$ noticegym.php
 RewriteRule	^news?$  news.php
 RewriteRule	^admin?$ dashboard.php
 
