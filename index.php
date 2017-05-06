@@ -63,14 +63,13 @@
 					{ 
 						session_start(); 
 					} 
-					if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+					if (isset($_SESSION['email']) && isset($_SESSION['username']) && $_SESSION['loggedin'] == true) {
 						$username=$_SESSION['username'];
 						$_SESSION['loggedin'] = true;
 						$_SESSION['username'] = $username;
 						$Email=$_SESSION['email'];
 						$_SESSION['email'] = $Email;
-						//echo $Email;
-						if(!(empty($Email))) {
+						//echo $Email
                             ?>
                             <li class="dropdown">
                                 <a href="signLog" class="dropdown-toggle" data-toggle="dropdown">
@@ -83,13 +82,6 @@
                             </li>
 
                             <?php
-                        }else{
-                            $username="REGISTER";?>
-                            <li ><a href="signLog"><?php echo $username ?></a></li>
-                            <?php
-
-                        }
-
 					}
 					 else{
 						$username="REGISTER"; ?>
