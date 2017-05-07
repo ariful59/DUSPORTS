@@ -85,8 +85,8 @@
 					if(!isset($_SESSION)) 
 					{ 
 						session_start(); 
-					} 
-					if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+					}
+                    if (isset($_SESSION['email']) && isset($_SESSION['username']) && $_SESSION['loggedin'] == true) {
 						$username=$_SESSION['username'];
 						$_SESSION['loggedin'] = true;
 						$_SESSION['username'] = $username;
