@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa5edc25-edc4-401b-803d-c3d29845af81" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about-us.php" afterPath="$PROJECT_DIR$/about-us.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/save_pdf/1222222222121.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/save_pdf/Abdur.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/save_pdf/name.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/save_pdf/rumi.pdf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/save_pdf/nmamefds.pdf" afterPath="$PROJECT_DIR$/admin/save_pdf/nmamefds.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dashboard.php" afterPath="$PROJECT_DIR$/admin/dashboard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/gymupdate.php" afterPath="$PROJECT_DIR$/admin/gymupdate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/newsadmin.php" afterPath="$PROJECT_DIR$/admin/newsadmin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/swimupdate.php" afterPath="$PROJECT_DIR$/admin/swimupdate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-us.php" afterPath="$PROJECT_DIR$/contact-us.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.php" afterPath="$PROJECT_DIR$/news.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notice.php" afterPath="$PROJECT_DIR$/notice.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/noticegym.php" afterPath="$PROJECT_DIR$/noticegym.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedulegym.php" afterPath="$PROJECT_DIR$/schedulegym.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scheduleswim.php" afterPath="$PROJECT_DIR$/scheduleswim.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signLog.php" afterPath="$PROJECT_DIR$/signLog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swim.php" afterPath="$PROJECT_DIR$/swim.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/termgym.php" afterPath="$PROJECT_DIR$/termgym.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/termswim.php" afterPath="$PROJECT_DIR$/termswim.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,15 +24,15 @@
       <file leaf-file-name="gymupdate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/gymupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
+            <state relative-caret-position="297">
               <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
-                <marker date="1494161192830" expanded="true" signature="383:454" ph="UPDATE admin... " />
-                <marker date="1494161192830" expanded="true" signature="490:530" ph="SELECT * FRO... users" />
-                <marker date="1494161192830" expanded="true" signature="701:748" ph="INSERT INTO registration... " />
-                <marker date="1494161192830" expanded="true" signature="701:757" ph="INSERT INTO registration... " />
-                <marker date="1494161192830" expanded="true" signature="701:783" ph="INSERT INTO registration... " />
-                <marker date="1494161192830" expanded="true" signature="824:862" ph="SELECT * FRO... gym" />
+                <marker date="1494162863387" expanded="true" signature="383:454" ph="UPDATE admin... " />
+                <marker date="1494162863387" expanded="true" signature="490:530" ph="SELECT * FRO... users" />
+                <marker date="1494162863387" expanded="true" signature="714:764" ph="INSERT INTO registration... " />
+                <marker date="1494162863387" expanded="true" signature="714:773" ph="INSERT INTO registration... " />
+                <marker date="1494162863387" expanded="true" signature="714:799" ph="INSERT INTO registration... " />
+                <marker date="1494162863387" expanded="true" signature="840:878" ph="SELECT * FRO... gym" />
               </folding>
             </state>
           </provider>
@@ -72,16 +63,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swimupdate.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="swimupdate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/swimupdate.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
-                <marker date="1494161192770" expanded="true" signature="383:455" ph="UPDATE admin... " />
-                <marker date="1494161192770" expanded="true" signature="491:531" ph="SELECT * FRO... users" />
-                <marker date="1494161192770" expanded="true" signature="703:785" ph="INSERT INTO registration... " />
-                <marker date="1494161192770" expanded="true" signature="825:865" ph="SELECT * FRO... hello" />
+                <marker date="1494162856256" expanded="true" signature="383:455" ph="UPDATE admin... " />
+                <marker date="1494162856256" expanded="true" signature="491:531" ph="SELECT * FRO... users" />
+                <marker date="1494162856256" expanded="true" signature="716:801" ph="INSERT INTO registration... " />
+                <marker date="1494162856256" expanded="true" signature="841:881" ph="SELECT * FRO... hello" />
               </folding>
             </state>
           </provider>
@@ -112,20 +103,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3630">
-              <caret line="182" column="23" lean-forward="false" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
+            <state relative-caret-position="1320">
+              <caret line="148" column="25" lean-forward="false" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
               <folding>
-                <marker date="1494161192870" expanded="true" signature="6206:6244" ph="select * fro... admin_gym" />
-                <marker date="1494161192870" expanded="true" signature="6526:6938" ph="..." />
-                <marker date="1494161192870" expanded="true" signature="6717:6933" ph="..." />
-                <marker date="1494161192870" expanded="true" signature="6793:6899" ph="..." />
-                <marker date="1494161192870" expanded="true" signature="7751:7790" ph="select * fro... admin_swim" />
-                <marker date="1494161192870" expanded="true" signature="8118:8435" ph="..." />
-                <marker date="1494161192870" expanded="true" signature="8260:8430" ph="..." />
-                <marker date="1494161192870" expanded="true" signature="8314:8404" ph="..." />
+                <marker date="1494162883421" expanded="true" signature="6205:6243" ph="select * fro... admin_gym" />
+                <marker date="1494162883421" expanded="true" signature="6525:6937" ph="..." />
+                <marker date="1494162883421" expanded="true" signature="6716:6932" ph="..." />
+                <marker date="1494162883421" expanded="true" signature="6792:6898" ph="..." />
+                <marker date="1494162883421" expanded="true" signature="7749:7788" ph="select * fro... admin_swim" />
+                <marker date="1494162883421" expanded="true" signature="8116:8433" ph="..." />
+                <marker date="1494162883421" expanded="true" signature="8258:8428" ph="..." />
+                <marker date="1494162883421" expanded="true" signature="8312:8402" ph="..." />
               </folding>
             </state>
           </provider>
@@ -239,9 +230,9 @@
         <option value="$PROJECT_DIR$/scheduleswim.php" />
         <option value="$PROJECT_DIR$/admin/test.php" />
         <option value="$PROJECT_DIR$/admin/index.php" />
-        <option value="$PROJECT_DIR$/admin/dashboard.php" />
-        <option value="$PROJECT_DIR$/admin/gymupdate.php" />
         <option value="$PROJECT_DIR$/admin/swimupdate.php" />
+        <option value="$PROJECT_DIR$/admin/gymupdate.php" />
+        <option value="$PROJECT_DIR$/admin/dashboard.php" />
       </list>
     </option>
   </component>
@@ -433,18 +424,17 @@
       <workItem from="1494093055385" duration="973000" />
       <workItem from="1494094759128" duration="4704000" />
       <workItem from="1494099619638" duration="2013000" />
-      <workItem from="1494151126377" duration="9166000" />
+      <workItem from="1494151126377" duration="10851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88013000" />
+    <option name="totallyTimeSpent" value="89698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2586" height="1386" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19648437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19648437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -915,47 +905,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/admin/swimupdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3630">
-          <caret line="182" column="23" lean-forward="false" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
+        <state relative-caret-position="330">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
-            <marker date="1494161192870" expanded="true" signature="6206:6244" ph="select * fro... admin_gym" />
-            <marker date="1494161192870" expanded="true" signature="6526:6938" ph="..." />
-            <marker date="1494161192870" expanded="true" signature="6717:6933" ph="..." />
-            <marker date="1494161192870" expanded="true" signature="6793:6899" ph="..." />
-            <marker date="1494161192870" expanded="true" signature="7751:7790" ph="select * fro... admin_swim" />
-            <marker date="1494161192870" expanded="true" signature="8118:8435" ph="..." />
-            <marker date="1494161192870" expanded="true" signature="8260:8430" ph="..." />
-            <marker date="1494161192870" expanded="true" signature="8314:8404" ph="..." />
+            <marker date="1494162856256" expanded="true" signature="383:455" ph="UPDATE admin... " />
+            <marker date="1494162856256" expanded="true" signature="491:531" ph="SELECT * FRO... users" />
+            <marker date="1494162856256" expanded="true" signature="716:801" ph="INSERT INTO registration... " />
+            <marker date="1494162856256" expanded="true" signature="841:881" ph="SELECT * FRO... hello" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/gymupdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="297">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
-            <marker date="1494161192830" expanded="true" signature="383:454" ph="UPDATE admin... " />
-            <marker date="1494161192830" expanded="true" signature="490:530" ph="SELECT * FRO... users" />
-            <marker date="1494161192830" expanded="true" signature="701:748" ph="INSERT INTO registration... " />
-            <marker date="1494161192830" expanded="true" signature="701:757" ph="INSERT INTO registration... " />
-            <marker date="1494161192830" expanded="true" signature="701:783" ph="INSERT INTO registration... " />
-            <marker date="1494161192830" expanded="true" signature="824:862" ph="SELECT * FRO... gym" />
+            <marker date="1494162863387" expanded="true" signature="383:454" ph="UPDATE admin... " />
+            <marker date="1494162863387" expanded="true" signature="490:530" ph="SELECT * FRO... users" />
+            <marker date="1494162863387" expanded="true" signature="714:764" ph="INSERT INTO registration... " />
+            <marker date="1494162863387" expanded="true" signature="714:773" ph="INSERT INTO registration... " />
+            <marker date="1494162863387" expanded="true" signature="714:799" ph="INSERT INTO registration... " />
+            <marker date="1494162863387" expanded="true" signature="840:878" ph="SELECT * FRO... gym" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/swimupdate.php">
+    <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="1320">
+          <caret line="148" column="25" lean-forward="false" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
           <folding>
-            <marker date="1494161192770" expanded="true" signature="383:455" ph="UPDATE admin... " />
-            <marker date="1494161192770" expanded="true" signature="491:531" ph="SELECT * FRO... users" />
-            <marker date="1494161192770" expanded="true" signature="703:785" ph="INSERT INTO registration... " />
-            <marker date="1494161192770" expanded="true" signature="825:865" ph="SELECT * FRO... hello" />
+            <marker date="1494162883421" expanded="true" signature="6205:6243" ph="select * fro... admin_gym" />
+            <marker date="1494162883421" expanded="true" signature="6525:6937" ph="..." />
+            <marker date="1494162883421" expanded="true" signature="6716:6932" ph="..." />
+            <marker date="1494162883421" expanded="true" signature="6792:6898" ph="..." />
+            <marker date="1494162883421" expanded="true" signature="7749:7788" ph="select * fro... admin_swim" />
+            <marker date="1494162883421" expanded="true" signature="8116:8433" ph="..." />
+            <marker date="1494162883421" expanded="true" signature="8258:8428" ph="..." />
+            <marker date="1494162883421" expanded="true" signature="8312:8402" ph="..." />
           </folding>
         </state>
       </provider>

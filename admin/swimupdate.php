@@ -14,17 +14,17 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     $result= $conn->query($sql);
     $row = $result->fetch_assoc() ;
     $FirstName=$row['username'];
-    $hash1 = md5( rand(1000,10000));
+    $hash1 =substr(md5(uniqid(rand(1,6))), 0, 8);
 
     $in=0;
-    $conn->query("INSERT INTO registration(email,reg,in) VALUES('".$email."','".$hash1."','".$in."')");
+    $conn->query("INSERT INTO registration(email,reg,in_id) VALUES('".$email."','".$hash1."','".$in."')");
     require('fpdf.php');
     $sql1="SELECT * FROM hello where email='$email'";
     $result1= $conn->query($sql1);
     $row1 = $result1->fetch_assoc() ;
     $username=$row1['name'];
     $dept=$row1['subject'];
-    $present=$row1['present_address'];
+    $present=$row1['guardian_address'];
     $pdf=new FPDF();
     $pdf->AddPage();
     $image2='logodu.png';
@@ -38,7 +38,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     $pdf->SetY(94);
     $pdf->Cell(0,10,'Registration No:- '.$hash1,0,0,'C');
     $pdf->SetY(102);
-    $pdf->Cell(0,10,'Email:- '.$hash1,0,0,'C');
+    $pdf->Cell(0,10,'Email:- '.$email,0,0,'C');
     $pdf->Cell( 40, 40, $pdf->Image($image2, 89, 22, 33.78), 0, 0, 'L', false );
     //$pdf->Cell( 0, 10, $pdf->Image($image1, 89, 100, 33.78), 0, 0, 'L', false );
     $pdf->SetLineWidth(1.5);
@@ -53,11 +53,11 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     sendVerificationBySwift($email,$FirstName,$hash1,$path);
     header("location:home");
 
-    sendVerificationBySwift($email,$FirstName,$hash1);
+    sendVerificationBySwift($email,$FirstName,$hash1,$path);
     header("location:home");
 }
 
-function sendVerificationBySwift($email,$name,$id)
+function sendVerificationBySwift($email,$name,$id,$path)
 {
     require_once 'lib/swift_required.php';
 
@@ -89,7 +89,8 @@ dusports17@gmail.com';
     $message = Swift_Message::newInstance($subject)
         ->setFrom(array('noreply@dusports.com' => 'DUSPORTS'))
         ->setTo(array($email))
-        ->setBody($body);
+        ->setBody($body)
+        ->attach(Swift_Attachment::fromPath($path)->setFilename('registration.pdf'));
 
     $result = $mailer->send($message);
 }
