@@ -71,8 +71,14 @@
 					<?php 
 					} 
 					 else{
-						$username="REGISTER"; ?>
-					<li ><a href="signLog"><?php echo $username ?></a></li>				
+                         ?>
+                         <li class="dropdown">
+                             <a href="" class="dropdown-toggle" data-toggle="dropdown">REGISTER<i class="icon-angle-down"></i></a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="signLog">USER</a></li>
+                                 <li><a href ="./admin" target="_blank">ADMIN</a></li>
+                             </ul>
+                         </li>
                
 				<?php			   
 					}

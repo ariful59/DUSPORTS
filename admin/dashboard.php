@@ -146,7 +146,7 @@
                         </thead>
                         <tbody>
                         <?php
-                        //$conn = mysqli_connect("localhost", "root", "", "WebProject");
+                       //$conn = mysqli_connect("localhost", "root", "", "WebProject");
                         $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
                         $sql = "select * from admin_gym where active=0;";
                         $result = $conn->query($sql);
@@ -180,8 +180,8 @@
                         </thead>
                         <tbody>
                         <?php
-                         $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
-                       // $con = mysqli_connect("localhost", "root", "", "WebProject");
+                        $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+                        //$conn = mysqli_connect("localhost", "root", "", "WebProject");
                         $sql = "select * from admin_swim where active=0;";
                         $result = $conn->query($sql);
                         while ($row = $result->fetch_assoc()) {

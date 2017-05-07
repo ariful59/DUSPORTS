@@ -186,8 +186,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <tbody>
 
                     <?php
-                    $con=mysqli_connect("localhost","root","","WebProject");
-                    //$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+                    //$con=mysqli_connect("localhost","root","","WebProject");
+                    $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
                     $result = $conn->query("select * from news;");
 
                     while ($row = $result->fetch_assoc()) {
