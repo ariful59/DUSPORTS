@@ -142,12 +142,12 @@
                         <thead>
                         <th>ID</th>
                         <th>Email</th>
-                        <th>Active</th>
+                        <th>Activity</th>
                         </thead>
                         <tbody>
                         <?php
-                       //$conn = mysqli_connect("localhost", "root", "", "WebProject");
-                      $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+                     //  $conn = mysqli_connect("localhost", "root", "", "WebProject");
+                        $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
                         $sql = "select * from admin_gym where active=0;";
                         $result = $conn->query($sql);
                         while ($row = $result->fetch_assoc()) {
@@ -178,12 +178,12 @@
                         <thead>
                         <th>ID</th>
                         <th>Email</th>
-                        <th>Active</th>
+                        <th>Activity</th>
                         </thead>
                         <tbody>
                         <?php
-                       $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
-                      // $conn = mysqli_connect("localhost", "root", "", "WebProject");
+                      $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+                       //$conn = mysqli_connect("localhost", "root", "", "WebProject");
                         $sql = "select * from admin_swim where active=0;";
                         $result = $conn->query($sql);
                         while ($row = $result->fetch_assoc()) {

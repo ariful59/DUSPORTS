@@ -27,7 +27,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     $pdf=new FPDF();
     $pdf->AddPage();
     $image2='logodu.png';
-
     $pdf->SetY(70);
     $pdf->SetFont('Times','B',16);
     $pdf->Cell(0,10,'Name:- '.$username,0,0,'C');
@@ -47,9 +46,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     $pdf->Line(20, 12, 20, 140);
     $pdf->Line(210-20, 12, 210-20, 140);
     $pdf->Line(20, 12, 20, 140);
-    $path='save_pdf/'.$username.'.pdf';
+    $path='save_pdf/'.$hash1.'.pdf';
     $pdf->output($path,'F');
-    $path='save_pdf/'.$username.'.pdf';
+    $path='save_pdf/'.$hash1.'.pdf';
     sendVerificationBySwift($email,$FirstName,$hash1,$path);
     header("location:home");
 }

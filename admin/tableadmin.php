@@ -174,6 +174,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <thead>
                     <th>ID</th>
                     <th>Name</th>
+                    <th>Registration</th>
                     <th>Email</th>
                     </thead>
                     <tbody>
