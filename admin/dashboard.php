@@ -147,15 +147,17 @@
                         <tbody>
                         <?php
                        //$conn = mysqli_connect("localhost", "root", "", "WebProject");
-                       $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+                      $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
                         $sql = "select * from admin_gym where active=0;";
                         $result = $conn->query($sql);
                         while ($row = $result->fetch_assoc()) {
 
                             $_SESSION['loggedin'] = true;
                             $_SESSION['email'] = $row['email'];
+                            if($row['active']==0)
+                                $active='Pending';
                             echo "<tr><td>" . $row['id'] . "</td><td><a href=\"user_informationgym.php\">" . $row['email'] . "</a></td>
-                            <td>" . $row['active'] . "</td> 
+                            <td>". $active . "</td> 
                             <td>
                             <form action=\"gymupdate.php\" method=\"post\">
                             <input type=\"submit\" value=\"Confirm\">
@@ -181,7 +183,7 @@
                         <tbody>
                         <?php
                        $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
-                        //$conn = mysqli_connect("localhost", "root", "", "WebProject");
+                      // $conn = mysqli_connect("localhost", "root", "", "WebProject");
                         $sql = "select * from admin_swim where active=0;";
                         $result = $conn->query($sql);
                         while ($row = $result->fetch_assoc()) {
@@ -189,9 +191,10 @@
                             $_SESSION['loggedin'] = true;
                             $email = $row['email'];
                             $_SESSION['email'] = $email;
-
+                            if($row['active']==0)
+                                $active='Pending';
                             echo "<tr><td>" . $row['id'] . "</td><td><a href=\"user_information.php\">" . $row['email'] . "</a></td>
-					<td>" . $row['active'] . "</td> 
+					<td>" . $active . "</td> 
 					<td>
 					<form action=\"swimupdate.php\" method=\"post\">
                     <input type=\"submit\" value=\"Confirm\">

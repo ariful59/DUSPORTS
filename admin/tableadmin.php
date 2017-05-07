@@ -136,6 +136,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <thead>
                     <th>ID</th>
                     <th>Name</th>
+                    <th>Registration</th>
                     <th>Email</th>
                     </thead>
                     <tbody>
@@ -148,10 +149,15 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     while ($row = $result->fetch_assoc()) {
                         $email = $row['email'];
                         $sql1 = "SELECT * FROM users where email='$email'";
+                        $sql2 = "SELECT * FROM registration1 where email='$email'";
                         if ($result1 = $conn->query($sql1)) {
-                            $row1 = $result1->fetch_assoc();
-                            $name = $row1['username'];
-                            echo "<tr><td>" . $row['id'] . "</td><td>" . $name . "</td><td>" . $row['email'] . "</td></tr>";
+                            if ($result2 = $conn->query($sql2)) {
+                                $row1 = $result1->fetch_assoc();
+                                $row2 = $result2->fetch_assoc();
+                                $name = $row1['username'];
+                                $reg=$row2['reg'];
+                                echo "<tr><td>" . $row['id'] . "</td><td>" . $name . "</td><td> " . $reg . "  </td><td>" . $row['email'] . "</td></tr>";
+                            }
                         }
                     }
 
@@ -172,17 +178,22 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </thead>
                     <tbody>
                     <?php
-                   // $conn = mysqli_connect("localhost", "root", "", "WebProject");
+                   //$conn = mysqli_connect("localhost", "root", "", "WebProject");
                     $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
                     $sql = "select * from admin_swim  where active=1;";
                     $result = $conn->query($sql);
+                    $sql2 = "SELECT * FROM registration2 where email='$email'";
                     while ($row = $result->fetch_assoc()) {
                         $email = $row['email'];
                         $sql1 = "SELECT * FROM users where email='$email'";
                         if ($result1 = $conn->query($sql1)) {
-                            $row1 = $result1->fetch_assoc();
-                            $name = $row1['username'];
-                            echo "<tr><td>" . $row['id'] . "</td><td>" . $name . "</td><td>" . $row['email'] . "</td></tr>";
+                            if ($result2 = $conn->query($sql2)) {
+                                $row1 = $result1->fetch_assoc();
+                                $row2 = $result2->fetch_assoc();
+                                $name = $row1['username'];
+                                $reg = $row2['reg'];
+                                echo "<tr><td>" . $row['id'] . "</td><td>" . $name . "</td><td>" . $reg . "</td><td>" . $row['email'] . "</td></tr>";
+                            }
                         }
                     }
                     ?>

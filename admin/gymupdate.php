@@ -15,8 +15,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     $row = $result->fetch_assoc() ;
     $FirstName=$row['username'];
     $hash1 =substr(md5(uniqid(rand(1,6))), 0, 8);
-    $in=1;
-    $conn->query("INSERT INTO registration(email,reg,in_id) VALUES('".$email."','".$hash1."','".$in."')");
+    $conn->query("INSERT INTO registration1(email,reg) VALUES('".$email."','".$hash1."')");
 
     require('fpdf.php');
     $sql1="SELECT * FROM gym where email='$email'";
