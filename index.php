@@ -117,7 +117,9 @@
                             <div class="col-md-12">
                                 <div class="carousel-content centered">
                                     <h2 class="animation animated-item-1">Welcome to University of Dhaka Sports</h2>
-                                    <p class="animation animated-item-2">You can get admission in swimming pool, gymnasium and also know about the latest update of Dhaka University Sports</p>
+                                    <p class="animation animated-item-2">
+                                    User: arifulamindu@gmail.com   password: rumidu (everything in small letter)<br>
+                                    Admin: arifulamindu@gmail.com  password:rumi (everything in small letter)</p>
                                 </div>
                             </div>
                         </div>
@@ -334,3 +336,7 @@
 
     </body>
 </html>
+<?php
+    //You can get admission in swimming pool, gymnasium and also know about the latest update of Dhaka University Sports
+
+?>
