@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
     //$conn = new mysqli('localhost', 'root', '', 'WebProject');
 	$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
 
-    $sql = "SELECT * FROM colleges WHERE id='".$id."'";
+    $sql = "SELECT * FROM contact information WHERE name='".$id."'";
 
     $r = mysqli_query($conn,$sql);
 
