@@ -1,6 +1,6 @@
 <?php
-    $conn = new mysqli('localhost', 'root', '', 'webproject');
-	//$conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
+   // $conn = new mysqli('localhost', 'root', '', 'webproject');
+    $conn = new mysqli('localhost', 'dusports', 'dusports', 'dusports');
     mysqli_query($conn,"SET CHARACTER SET utf8");
     mysqli_query($conn,"SET SESSION collation_connection ='utf8_general_ci'") or die (mysqli_error());
     mysqli_query($conn,"SET CHARACTER_SET_RESULTS = utf8");
